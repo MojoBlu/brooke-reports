@@ -5,27 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" class="site-title">{{ site.title }}</a>
-      <ul>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/second-look/">Second Look</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="/" class="site-logo" aria-label="Brooke Reports — home">Brooke Reports</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="/blog/" {% if "/blog" in page.url %}aria-current="page"{% endif %}>Blog</a></li>
+          <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
+          <li><a href="/second-look/" {% if page.url == "/second-look/" %}aria-current="page"{% endif %}>Second Look</a></li>
+          <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="/#newsletter" class="btn btn-primary site-header__subscribe">Subscribe</a>
+    </div>
   </header>
 
-  <main>
+  <main id="main-content">
     {{ content | safe }}
   </main>
 
-  <footer>
-    <p>&copy; {{ site.author }}</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; {{ site.author }}</p>
+    </div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>

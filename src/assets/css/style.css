@@ -1,1 +1,459 @@
-/* styles */
+/* ============================================================
+   BROOKE REPORTS — DESIGN SYSTEM
+   Fonts: Fraunces (display), DM Sans (body), DM Mono (labels)
+   Load in <head> before this file:
+   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+   ============================================================ */
+
+:root{
+  /* ---- GREENS (primary brand) ---- */
+  --forest:#243024;        /* main brand green / hero & header bg */
+  --forest-deep:#1a231a;   /* darker sections, footer */
+  --forest-black:#141b14;  /* deepest shadow tone */
+
+  /* ---- NAVY (accent surface — Second Look) ---- */
+  --navy:#1e2c3f;
+  --navy-deep:#16212f;
+
+  /* ---- CREAMS / PAPER (light surfaces) ---- */
+  --cream:#ece4d4;         /* main light background */
+  --cream-light:#f3ecdd;   /* lightest — text on dark, paper cards */
+  --paper:#efe7d6;         /* note/collage paper */
+  --paper-edge:#e3d9c4;    /* tags, torn paper accents */
+
+  /* ---- BURNT ORANGE (action / highlight) ---- */
+  --burnt:#bf5a2b;         /* buttons, links, underlines */
+  --burnt-deep:#a84a22;    /* hover state */
+  --burnt-glow:#d4703f;    /* lighter glow / on-dark accent text */
+
+  /* ---- SAGE (soft secondary) ---- */
+  --sage:#8a9479;
+
+  /* ---- INK (text on light) ---- */
+  --ink:#2b2722;           /* body text on cream */
+  --ink-soft:#5c554a;      /* secondary / muted text */
+  --line:rgba(43,39,34,.16); /* hairline borders */
+
+  /* ---- FONTS ---- */
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"DM Sans",system-ui,sans-serif;
+  --font-mono:"DM Mono","SF Mono",monospace;
+
+  /* ---- LAYOUT ---- */
+  --maxw:1240px;
+  --gutter:clamp(20px,5vw,40px);
+
+  /* ---- TYPE SCALE (fluid) ---- */
+  --fs-display:clamp(2.9rem,5.6vw,4.7rem);  /* hero h1 */
+  --fs-h2:clamp(2rem,3.5vw,2.6rem);
+  --fs-h3:1.28rem;
+  --fs-body:1.04rem;
+  --fs-small:.92rem;
+  --fs-label:.74rem;        /* mono eyebrows */
+}
+
+/* ============================================================
+   RESET / BASE
+   ============================================================ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+  font-size:16px;              /* never below — accessibility floor */
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:500;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+h1{font-size:var(--fs-display);font-weight:500;line-height:1.02}
+h2{font-size:var(--fs-h2)}
+h3{font-size:var(--fs-h3)}
+em{font-style:italic}
+
+p{max-width:68ch}              /* readable line length */
+
+/* mono eyebrow / kicker label */
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:var(--fs-label);
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  font-weight:500;
+  color:var(--burnt);
+}
+
+/* italic display "feeling" line */
+.feel{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:400;
+  color:var(--ink-soft);
+}
+
+/* ============================================================
+   LAYOUT HELPERS
+   ============================================================ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+
+/* surfaces */
+.bg-forest{background:var(--forest);color:var(--cream-light)}
+.bg-navy{background:var(--navy);color:var(--cream-light)}
+.bg-cream{background:var(--cream);color:var(--ink)}
+
+/* on dark backgrounds, headings & eyebrows flip light */
+.bg-forest h1,.bg-forest h2,.bg-forest h3,.bg-forest h4,
+.bg-navy h1,.bg-navy h2,.bg-navy h3,.bg-navy h4{color:var(--cream-light)}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  font-family:var(--font-body);
+  font-size:.97rem;
+  font-weight:500;
+  padding:16px 28px;            /* ≥44px tall touch target */
+  border-radius:3px;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  border:1px solid transparent;
+  transition:transform .2s ease,background .2s ease,box-shadow .3s ease;
+}
+.btn .arrow{transition:transform .25s ease}
+.btn:hover .arrow{transform:translateX(5px)}
+
+.btn-primary{background:var(--burnt);color:#fff}
+.btn-primary:hover{background:var(--burnt-deep);transform:translateY(-2px);box-shadow:0 14px 34px rgba(191,90,43,.4)}
+
+.btn-ghost{background:transparent;border:1px solid rgba(243,236,221,.38);color:var(--cream-light)}
+.btn-ghost:hover{border-color:var(--cream-light);transform:translateY(-2px)}
+
+/* ghost button on light backgrounds */
+.bg-cream .btn-ghost{border-color:var(--line);color:var(--ink)}
+.bg-cream .btn-ghost:hover{border-color:var(--ink)}
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+.link{color:var(--burnt);font-weight:500}
+.link:hover{text-decoration:underline}
+
+/* ============================================================
+   FOCUS — accessibility, never remove without replacing
+   ============================================================ */
+:focus-visible{outline:2px solid var(--burnt);outline-offset:3px;border-radius:2px}
+
+/* ============================================================
+   MOTION — respect reduced-motion everywhere
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* ============================================================
+   SKIP LINK
+   ============================================================ */
+.skip-link{
+  position:absolute;
+  top:-100%;
+  left:var(--gutter);
+  background:var(--burnt);
+  color:#fff;
+  padding:12px 20px;
+  border-radius:0 0 4px 4px;
+  font-family:var(--font-body);
+  font-size:var(--fs-small);
+  font-weight:500;
+  z-index:200;
+}
+.skip-link:focus{top:0}
+
+/* ============================================================
+   SITE HEADER
+   ============================================================ */
+.site-header{
+  background:var(--forest);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.site-header__inner{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding-top:1.125rem;
+  padding-bottom:1.125rem;
+}
+
+.site-logo{
+  font-family:var(--font-display);
+  font-size:1.15rem;
+  font-weight:500;
+  color:var(--cream-light);
+  flex-shrink:0;
+  margin-right:auto;
+}
+
+/* nav links */
+.site-nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:0.125rem;
+}
+
+.site-nav a{
+  display:block;
+  font-size:var(--fs-small);
+  color:rgba(243,236,221,.65);
+  padding:8px 10px;
+  border-radius:3px;
+  position:relative;
+  transition:color .18s ease;
+  white-space:nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"]{color:var(--cream-light)}
+
+.site-nav a[aria-current="page"]::after{
+  content:'';
+  position:absolute;
+  bottom:4px;
+  left:10px;
+  right:10px;
+  height:1px;
+  background:var(--burnt-glow);
+}
+
+/* subscribe CTA */
+.site-header__subscribe{
+  font-size:var(--fs-small);
+  padding:10px 20px;
+  flex-shrink:0;
+  min-height:44px;
+}
+
+/* hamburger / bookstack button */
+.nav-toggle{
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  background:none;
+  border:none;
+  padding:10px;
+  cursor:pointer;
+  min-width:44px;
+  min-height:44px;
+  border-radius:3px;
+  order:3;
+}
+
+.nav-toggle span{
+  display:block;
+  width:25px;
+  height:5px;
+  background:var(--cream-light);
+  margin-bottom:4px;
+  transform:rotate(0deg) translate3d(0,0,0);
+  transition:transform 350ms;
+}
+
+.nav-toggle span:last-child{margin-bottom:0}
+
+/* bookstack — three book spines at rest → fanned open */
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:rotate(60deg)  translate3d(11px,-3px,0)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){transform:rotate(75deg)  translate3d(-1px,1px,0)}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:rotate(90deg)  translate3d(-10px,10px,0)}
+
+/* mobile: show hamburger, collapse nav */
+@media(max-width:680px){
+  .nav-toggle{display:flex}
+
+  .site-nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--forest-deep);
+    padding:0.75rem var(--gutter) 1.25rem;
+    z-index:99;
+  }
+
+  .site-nav.is-open{display:block}
+
+  .site-nav ul{
+    flex-direction:column;
+    gap:0;
+  }
+
+  .site-nav a{
+    padding:12px 4px;
+    font-size:1rem;
+  }
+
+  .site-nav a[aria-current="page"]::after{display:none}
+
+  .site-header__inner{position:relative}
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  background:var(--forest);
+  position:relative;
+  padding-top:clamp(48px,6vw,80px);
+  padding-bottom:80px; /* room for the torn edge */
+  overflow:hidden;
+}
+
+.hero__inner{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2.5rem;
+  align-items:center;
+}
+
+@media(min-width:800px){
+  .hero__inner{
+    grid-template-columns:1fr 1fr;
+    gap:clamp(2rem,5vw,4rem);
+    min-height:70vh;
+  }
+}
+
+/* — text — */
+.hero__eyebrow{
+  color:var(--burnt-glow);
+  margin-bottom:1.25rem;
+}
+
+.hero__headline{
+  display:flex;
+  flex-direction:column;
+  color:var(--cream-light);
+  margin-bottom:1.5rem;
+}
+
+.hero__line{display:block}
+
+.hero__line--italic em{font-style:italic}
+
+/* drawn underline under "Think More Clearly." */
+.hero__drawn{
+  position:relative;
+  display:inline;
+}
+
+.hero__drawn::after{
+  content:'';
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  height:3px;
+  width:100%;
+  background:var(--burnt);
+  border-radius:1px;
+}
+
+.hero__lede{
+  color:rgba(243,236,221,.8);
+  font-size:clamp(1rem,1.8vw,1.1rem);
+  margin-bottom:2rem;
+  max-width:52ch;
+}
+
+.hero__ctas{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.75rem;
+  align-items:center;
+}
+
+/* — collage image — */
+.hero__collage{order:-1} /* image above text on mobile */
+
+@media(min-width:800px){
+  .hero__collage{order:0}
+}
+
+.hero__collage img{
+  width:100%;
+  height:auto;
+  max-height:700px;
+  object-fit:cover;
+  border-radius:4px;
+  background:var(--forest-deep); /* visible while image loads */
+  min-height:240px;              /* placeholder height before image loads */
+}
+
+/* — torn paper edge — */
+.hero__tear{
+  position:absolute;
+  bottom:-1px; /* -1px prevents a hairline gap at some zoom levels */
+  left:0;
+  width:100%;
+  height:72px;
+  display:block;
+}
+
+/* ============================================================
+   HERO ANIMATIONS  (peak — only when motion is OK)
+   @keyframes are global; they're only referenced inside
+   the no-preference block so they never fire under reduce.
+   ============================================================ */
+@keyframes heroFadeUp{
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes heroDrawLine{
+  to{width:100%}
+}
+
+@media(prefers-reduced-motion:no-preference){
+  .hero__eyebrow{
+    opacity:0;transform:translateY(12px);
+    animation:heroFadeUp .45s ease forwards .1s;
+  }
+  .hero__line:nth-child(1){
+    opacity:0;transform:translateY(14px);
+    animation:heroFadeUp .45s ease forwards .3s;
+  }
+  .hero__line:nth-child(2){
+    opacity:0;transform:translateY(14px);
+    animation:heroFadeUp .45s ease forwards .5s;
+  }
+  .hero__line:nth-child(3){
+    opacity:0;transform:translateY(14px);
+    animation:heroFadeUp .45s ease forwards .7s;
+  }
+  .hero__lede{
+    opacity:0;transform:translateY(10px);
+    animation:heroFadeUp .45s ease forwards 1s;
+  }
+  .hero__ctas{
+    opacity:0;transform:translateY(10px);
+    animation:heroFadeUp .45s ease forwards 1.2s;
+  }
+  .hero__collage{
+    opacity:0;
+    animation:heroFadeUp .6s ease forwards .35s;
+  }
+  /* underline draws after the third headline line animates in */
+  .hero__drawn::after{
+    width:0;
+    animation:heroDrawLine .65s ease forwards 1.35s;
+  }
+}
