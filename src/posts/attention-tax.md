@@ -2,7 +2,7 @@
 title: "The Attention Tax: How We Pay Without Realizing"
 date: 2026-06-02
 category: Your Category
-description: One-line description shown in post cards.
+description: Why constant capture is costing you more than time.
 tags:
   - invisible systems
 ---
