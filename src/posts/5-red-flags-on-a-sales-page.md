@@ -78,3 +78,4 @@ But your job is not to be impressed. Your job is to think clearly.
 Before you buy, slow down. Look for the pressure. Separate the promise from the proof. And for the love of your bank account, do not let a countdown timer make financial decisions for you.
 
 Want help spotting the pressure before you buy? Run the page through <a href="/second-look.html">Second Look</a>.
+

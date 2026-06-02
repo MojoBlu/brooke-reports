@@ -139,3 +139,4 @@ Slow down. Look twice. Then decide.
 - Scopelliti, I., Morewedge, C. K., et al. (2015). Carnegie Mellon/Boston University research on the bias blind spot being independent of intelligence and decision-making ability.
 - Cialdini, R. (1984). *Influence: The Psychology of Persuasion.* Referenced as cultural context for savvy-buyer identity.
 - Pronin, E. (2007). "Perception and Misperception of Bias in Human Judgment." The concept of naive realism as a driver of the bias blind spot.
+
