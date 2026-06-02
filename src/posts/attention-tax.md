@@ -106,7 +106,7 @@ You spot it by noticing the absence of a decision. No "yes, more," just more. Yo
 This same pattern, a design that quietly steers you while feeling like your own free choice, is exactly what runs underneath a high-pressure sales page too. The countdown, the "spots left," the testimonial engineered to land at the perfect moment. If a page has you hovering over the buy button but something feels slightly off, run it through Second Look before you decide. It won't tell you what to do. It just shows you what's being done to you, so the choice can actually be yours.
 
 Keep your hand on your own steering wheel.
-
+___
 ### Receipts
 
 <ul>
