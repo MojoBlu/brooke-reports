@@ -7,8 +7,9 @@
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  {% if extraCss %}<link rel="stylesheet" href="{{ extraCss }}">{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -42,8 +43,60 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; {{ site.author }}</p>
+    <div class="wrap site-footer__top">
+
+      <div class="site-footer__brand">
+        <a href="/" class="site-logo">Brooke Reports</a>
+        <p>Understanding persuasion.<br>Building clarity.<br>Living more freely.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Explore">
+        <p class="site-footer__nav-heading">Explore</p>
+        <ul>
+          <li><a href="/blog/">Reports</a></li>
+          <li><a href="/second-look/">Second Look</a></li>
+          <li><a href="/notes/">Notes</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Company">
+        <p class="site-footer__nav-heading">Company</p>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/method/">Method &amp; Sources</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Connect">
+        <p class="site-footer__nav-heading">Connect</p>
+        <ul>
+          <li><a href="/#newsletter">Subscribe</a></li>
+          <li><a href="#" rel="noopener noreferrer">Instagram</a></li>{# TODO: add Instagram URL #}
+          <li><a href="#" rel="noopener noreferrer">X (Twitter)</a></li>{# TODO: add X URL #}
+        </ul>
+      </nav>
+
+      <div class="site-footer__newsletter" id="newsletter">
+        <p class="site-footer__newsletter-heading">Get new reports &amp; notes</p>
+        <p class="site-footer__newsletter-sub">Straight to your inbox.</p>
+        <div class="beehiiv-embed">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="86d44aca-ff2a-4c07-8ebb-da3774307464"></script>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="wrap site-footer__bottom-inner">
+        <p>&copy; {{ "" | currentYear }} Brooke Reports. All rights reserved.</p>
+        <nav aria-label="Legal">
+          <ul>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </footer>
 

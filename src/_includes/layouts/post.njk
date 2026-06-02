@@ -1,19 +1,86 @@
 ---
 layout: layouts/base.njk
+extraCss: /assets/css/post-page.css
 ---
-<article class="post">
-  <header class="post-header">
-    <h1>{{ title }}</h1>
-    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-    {% if tags %}
-    <ul class="tags">
-      {% for tag in tags %}
-        {% if tag !== "post" %}
-        <li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
+<div class="pt-page">
+
+  {# ── POST HEADER ── #}
+  <section class="post-header">
+    <div class="container">
+      <a href="/blog/" class="post-header__back">← All Reports</a>
+
+      <p class="post-header__eyebrow">{{ category if category else "Report" }}</p>
+
+      <h1 class="post-header__title">{{ title }}</h1>
+
+      <div class="post-header__meta">
+        <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+        {% if readTime %}
+          <span class="post-header__meta-sep">·</span>
+          <span>{{ readTime }} min read</span>
         {% endif %}
-      {% endfor %}
-    </ul>
-    {% endif %}
-  </header>
-  {{ content | safe }}
-</article>
+      </div>
+    </div>
+  </section>
+
+  {# ── ARTICLE BODY ── #}
+  <section class="post-body">
+    <div class="post-body__inner">
+      {{ content | safe }}
+    </div>
+  </section>
+
+  {# ── POST FOOTER ── #}
+  <section class="post-footer">
+    <div class="post-footer__inner">
+      {% if tags %}
+      <div class="post-footer__tags">
+        {% for tag in tags %}
+          {% if tag !== "post" %}
+          <a href="/tags/{{ tag | slug }}/" class="post-footer__tag">{{ tag }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <a href="/blog/" class="post-footer__back">← Back to all reports</a>
+    </div>
+  </section>
+
+  {# ── MORE POSTS ── #}
+  {% set morePosts = collections.posts | except(page.url) | limit(3) %}
+  {% if morePosts.length > 0 %}
+  <section class="more-posts">
+    <div class="container">
+      <p class="more-posts__label">More Reports</p>
+      <div class="more-posts__grid">
+        {% for post in morePosts %}
+        <a href="{{ post.url }}" class="more-post-item">
+          {% if post.data.category %}
+          <span class="more-post-item__cat">{{ post.data.category }}</span>
+          {% endif %}
+          <p class="more-post-item__title">{{ post.data.title }}</p>
+          <time class="more-post-item__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── NEWSLETTER STRIP ── #}
+  <section class="post-newsletter">
+    <div class="container">
+      <div class="post-newsletter__inner">
+        <div>
+          <p class="post-newsletter__headline">Stay <em>informed</em>,<br>not overwhelmed.</p>
+          <p class="post-newsletter__sub">New reports and notes, straight to your inbox. No noise.</p>
+        </div>
+        <div class="beehiiv-embed">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="86d44aca-ff2a-4c07-8ebb-da3774307464"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

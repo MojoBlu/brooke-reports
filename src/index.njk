@@ -4,6 +4,9 @@ title: Home
 description: Brooke Reports helps you understand how persuasion works—so you can notice what's really going on beneath the surface and make clearer, calmer decisions.
 ---
 
+{# ======================================================== #}
+{# HERO                                                      #}
+{# ======================================================== #}
 <section class="hero">
   <div class="wrap hero__inner">
 
@@ -23,12 +26,12 @@ description: Brooke Reports helps you understand how persuasion works—so you c
 
     {#
       IMAGE: hero-collage
-      Aspect ratio: 4:5  (560 × 700px)
-      Provide these files in src/assets/images/:
-        hero-collage.jpg          560 × 700   (JPEG fallback)
-        hero-collage-560.webp     560 × 700
-        hero-collage-800.webp     800 × 1000
-        hero-collage-1120.webp   1120 × 1400  (2× retina)
+      Aspect ratio: 4:5 (560 × 700px)
+      Provide in src/assets/images/:
+        hero-collage.jpg           560 × 700   JPEG fallback
+        hero-collage-560.webp      560 × 700
+        hero-collage-800.webp      800 × 1000
+        hero-collage-1120.webp    1120 × 1400  (2× retina)
       Shoot/export source at 1120 × 1400px or larger.
     #}
     <div class="hero__collage" aria-hidden="true">
@@ -50,21 +53,228 @@ description: Brooke Reports helps you understand how persuasion works—so you c
 
   </div>
 
-  <svg class="hero__tear" viewBox="0 0 1440 72" preserveAspectRatio="none"
-       xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-    <path d="M0,45 L15,38 L28,50 L42,32 L58,46 L72,28 L85,44 L98,35 L112,52 L125,30
-             L138,48 L152,22 L165,42 L178,54 L192,36 L205,28 L220,50 L234,40 L248,55
-             L260,30 L275,45 L288,25 L302,48 L315,38 L330,52 L344,28 L358,44 L370,32
-             L385,50 L398,35 L413,55 L427,28 L440,46 L454,22 L468,44 L480,38 L496,52
-             L508,30 L524,48 L535,40 L550,55 L563,28 L576,46 L590,33 L604,50 L618,22
-             L630,44 L644,38 L658,52 L670,30 L685,47 L698,26 L712,44 L726,34 L740,52
-             L753,28 L766,46 L780,32 L794,50 L808,36 L822,52 L835,28 L848,44 L862,30
-             L876,50 L890,22 L903,44 L917,38 L930,54 L944,28 L958,46 L970,32 L985,50
-             L998,35 L1012,55 L1026,28 L1038,46 L1053,24 L1067,44 L1080,38 L1094,52
-             L1108,30 L1120,48 L1135,40 L1148,54 L1162,28 L1175,46 L1188,33 L1202,50
-             L1216,22 L1229,44 L1242,38 L1256,52 L1270,30 L1283,48 L1296,26 L1310,46
-             L1324,34 L1337,52 L1350,28 L1364,46 L1377,32 L1390,50 L1404,36 L1417,52
-             L1430,28 L1440,42 L1440,72 L0,72 Z"
-          fill="var(--cream)"/>
-  </svg>
+  <img class="hero__tear" src="/assets/images/torn-paper.png" alt="" aria-hidden="true">
+</section>
+
+
+{# ======================================================== #}
+{# FEATURED REPORTS                                          #}
+{# ======================================================== #}
+<section class="featured-reports">
+  <div class="wrap">
+    <div class="featured-reports__header">
+      <div>
+        <p class="eyebrow">Featured Reports</p>
+        <h2 class="featured-reports__heading">New Ideas.<br>Deeper Signals.</h2>
+      </div>
+      <a href="/blog/" class="featured-reports__all">View all reports <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="featured-reports__grid">
+      {% for post in collections.posts | limit(4) %}
+      <article class="report-card">
+
+        <div class="report-card__image">
+          {% if post.data.image %}
+          <img src="{{ post.data.image }}" alt="" width="280" height="175" loading="lazy">
+          {% else %}
+          <div class="report-card__placeholder" aria-hidden="true"></div>
+          {% endif %}
+        </div>
+
+        <div class="report-card__body">
+          {% if post.data.category %}
+          <p class="eyebrow report-card__eyebrow">{{ post.data.category }}</p>
+          {% endif %}
+          <h3 class="report-card__title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          {% if post.data.description %}
+          <p class="report-card__excerpt">{{ post.data.description }}</p>
+          {% endif %}
+          <footer class="report-card__meta">
+            <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            {% if post.data.readTime %}
+            <span aria-hidden="true"> · </span><span>{{ post.data.readTime }} min read</span>
+            {% endif %}
+          </footer>
+        </div>
+
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# SECOND LOOK PROMO                                         #}
+{# ======================================================== #}
+{#
+  IMAGE: second-look-bg
+  Dark/moody desk + books + ephemera photo, full-width
+  Provide at 1440px wide, JPG
+  When ready: uncomment background-image in .second-look-promo in CSS
+#}
+<section class="second-look-promo">
+  <div class="wrap second-look-promo__inner">
+
+    <div class="second-look-promo__lead">
+      <p class="eyebrow">Calm. Clear. Useful.</p>
+      <h2>Second Look</h2>
+      <p class="second-look-promo__desc">A practical tool for evaluating persuasive offers, claims, and choices—so you can respond less, and decide better.</p>
+      <a href="/second-look/" class="second-look-promo__link">Learn how it works <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="second-look-promo__features">
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M18 11V6.5a1.5 1.5 0 0 0-3 0v-.5a1.5 1.5 0 0 0-3 0v-.5a1.5 1.5 0 0 0-3 0V11l-1.5-2a1.5 1.5 0 0 0-2.6 1.5L8.5 16A5.5 5.5 0 0 0 14 19h1a5 5 0 0 0 5-5v-3h-2z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Pause the Pitch</p>
+          <p class="second-look-feature__desc">Step out of the moment so you can think straight.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Check the Claims</p>
+          <p class="second-look-feature__desc">Look for what's true, what's missing, and what's implied.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Spot the Pressure</p>
+          <p class="second-look-feature__desc">Name the tactics. Reduce the influence.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Choose with Clarity</p>
+          <p class="second-look-feature__desc">Make decisions that fit your values and your goals.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# ABOUT TEASER                                              #}
+{# ======================================================== #}
+<section class="about-teaser">
+  <div class="wrap about-teaser__inner">
+
+    {#
+      IMAGE: about-image
+      Atmospheric — books, candlelight, study scene
+      Aspect ratio: 3:4
+      Provide in src/assets/images/:
+        about-image.jpg           400 × 533   JPEG fallback
+        about-image-400.webp      400 × 533
+        about-image-800.webp      800 × 1066  (2× retina)
+    #}
+    <div class="about-teaser__image">
+      <img
+        src="/assets/images/about-image.jpg"
+        srcset="
+          /assets/images/about-image-400.webp  400w,
+          /assets/images/about-image-800.webp  800w
+        "
+        sizes="(min-width: 900px) 28vw, 100vw"
+        alt=""
+        width="400"
+        height="533"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="about-teaser__body">
+      <p class="eyebrow">About Brooke Reports</p>
+      <h2>Thoughtful. Sharp. Anti-Hype.</h2>
+      <p>Brooke Reports is an independent media and education brand exploring marketing psychology, influence, and human behavior. We believe understanding persuasion makes you more free—not more cynical.</p>
+      <ul class="about-teaser__values" aria-label="Our values">
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Evidence over noise.</strong>
+            <p>We research deeply and write clearly.</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Curious, not cynical.</strong>
+            <p>We ask better questions instead of rushing to conclusions.</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Human first.</strong>
+            <p>Because behind every decision is a real person.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-teaser__quote-wrap">
+      <blockquote class="about-teaser__quote">
+        <p>The goal isn't to resist everything. It's to recognize what's real—so you can choose what matters.</p>
+        <cite>— Brooke</cite>
+      </blockquote>
+    </div>
+
+  </div>
 </section>

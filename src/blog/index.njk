@@ -1,14 +1,233 @@
 ---
 layout: layouts/base.njk
-title: Blog
+title: The Reading Room
+description: Weekly writing on persuasion literacy, invisible systems, ethical influence, and making clearer decisions about how to live, work, and relate.
 permalink: /blog/
+extraCss: /assets/css/blog-page.css
 ---
-<h1>Blog</h1>
-<ul class="post-list">
-  {% for post in collections.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
-    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-  </li>
-  {% endfor %}
-</ul>
+
+{% set featuredPost = collections.posts[0] %}
+{% set remainingPosts = collections.posts | offset(1) %}
+
+<div class="bl-page">
+
+  <!-- HEADER -->
+  <header class="blog-header" aria-label="Blog header">
+    <div class="container" style="position:relative">
+      <span class="blog-header__bg-text" aria-hidden="true">READ</span>
+      <p class="blog-header__eyebrow">Brooke Reports</p>
+      <h1 class="blog-header__title">
+        THE<br>
+        READING<br>
+        <em>Room</em>
+      </h1>
+      <p class="blog-header__desc">
+        Weekly writing on persuasion, invisible systems, and making clearer decisions about how to live, work, and relate.
+      </p>
+    </div>
+  </header>
+
+  <!-- CATEGORY FILTER BAR -->
+  {% if collections.tagList.length > 0 %}
+  <nav class="category-bar" aria-label="Filter by topic">
+    <div class="category-bar__inner">
+      <button class="cat-btn active" data-cat="all">All Posts</button>
+      {% for tag in collections.tagList %}
+      <button class="cat-btn" data-cat="{{ tag | slug }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
+  </nav>
+  {% endif %}
+
+  <!-- FEATURED POST -->
+  {% if featuredPost %}
+  <section class="featured" aria-labelledby="featured-label">
+    <div class="container">
+      <p class="bl-label featured__label" id="featured-label">Featured</p>
+      <a href="{{ featuredPost.url }}" class="featured__card">
+        <div class="featured__image-wrap">
+          {% if featuredPost.data.category %}
+          <span class="featured__image-tag">{{ featuredPost.data.category }}</span>
+          {% endif %}
+          {% if featuredPost.data.image %}
+          <img src="{{ featuredPost.data.image }}" alt="" loading="lazy">
+          {% else %}
+          <p class="featured__image-placeholder" aria-hidden="true">{{ featuredPost.data.title | upper | truncate(20, true, '') }}</p>
+          {% endif %}
+        </div>
+        <div class="featured__content">
+          <div class="featured__meta">
+            {% if featuredPost.data.category %}
+            <span class="featured__cat">{{ featuredPost.data.category }}</span>
+            {% endif %}
+            <time class="featured__date" datetime="{{ featuredPost.date | htmlDateString }}">{{ featuredPost.date | readableDate }}</time>
+          </div>
+          <h2 class="featured__title">{{ featuredPost.data.title }}</h2>
+          {% if featuredPost.data.description %}
+          <p class="featured__excerpt">{{ featuredPost.data.description }}</p>
+          {% endif %}
+          <span class="featured__read">Read the post →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- POST LIST -->
+  <section class="post-list" aria-labelledby="posts-label">
+    <div class="container">
+      <p class="bl-label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
+      {% if remainingPosts.length > 0 %}
+      <div class="post-list__grid" id="post-grid">
+        {% for post in remainingPosts %}
+        {% set isBig = (loop.index0 % 3 == 0) %}
+        <a href="{{ post.url }}"
+           class="post-item{% if isBig %} post-item--big{% endif %}"
+           data-tags="{% for tag in post.data.tags %}{{ tag | slug }} {% endfor %}">
+          <div>
+            <div class="post-item__meta">
+              {% if post.data.category %}
+              <span class="post-item__cat">{{ post.data.category }}</span>
+              {% endif %}
+              <time class="post-item__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            </div>
+            <h3 class="post-item__title">{{ post.data.title }}</h3>
+            {% if isBig and post.data.description %}
+            <p class="post-item__excerpt">{{ post.data.description }}</p>
+            {% endif %}
+            {% if isBig %}
+            <span class="post-item__arrow" aria-hidden="true">→</span>
+            {% endif %}
+          </div>
+          {% if not isBig %}
+          <span class="post-item__arrow" aria-hidden="true">→</span>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% elif not featuredPost %}
+      <p class="post-list__empty">Posts coming soon.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- TRENDING + CATEGORIES -->
+  <section class="trending" aria-label="Start here and browse by topic">
+    <div class="container">
+      <div class="trending__inner">
+        <div>
+          <p class="bl-label trending__label reveal">Start here</p>
+          <h2 class="trending__title reveal reveal-delay-1">
+            START<br>
+            HERE.
+          </h2>
+          <ul class="trending__list">
+            {% for post in collections.posts | limit(5) %}
+            <a href="{{ post.url }}" class="trending-item reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index - 1 }}{% endif %}">
+              <span class="trending-item__num">0{{ loop.index }}</span>
+              <div>
+                <p class="trending-item__title">{{ post.data.title }}</p>
+                {% if post.data.category %}
+                <p class="trending-item__cat">{{ post.data.category }}</p>
+                {% endif %}
+              </div>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="reveal reveal-delay-2">
+          {% if collections.tagList.length > 0 %}
+          <div class="categories-cloud">
+            <p class="bl-label categories-cloud__label">Browse by topic</p>
+            <div class="categories-cloud__tags">
+              {% for tag in collections.tagList %}
+              <a href="/tags/{{ tag | slug }}/" class="cat-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR STRIP -->
+  <section class="author-strip" aria-label="About the author">
+    <div class="container">
+      <div class="author-strip__inner">
+        <div>
+          <p class="bl-label author-strip__label reveal">About the author</p>
+          <h2 class="author-strip__name reveal reveal-delay-1">
+            I'm Brooke.<br>
+            <em>Your calm<br>in the chaos.</em>
+          </h2>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="author-strip__bio">
+            I create content to help women rethinking the life they were told to want <strong>spot persuasion in real time</strong> — so they can make clearer decisions about how to live, work, and relate. Because most people are operating inside invisible systems they didn't choose.
+            <br><br>
+            20+ years of saying yes to interesting things. This blog is one of them.
+          </p>
+          <div class="author-strip__buttons">
+            <a href="/about/" class="bl-btn bl-btn--primary">More about me →</a>
+            <a href="/#newsletter" class="bl-btn bl-btn--ghost-light">Get the newsletter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER STRIP -->
+  <section class="newsletter-strip" aria-label="Newsletter signup">
+    <div class="container">
+      <div class="newsletter-strip__inner">
+        <div>
+          <h2 class="newsletter-strip__headline">
+            Don't miss<br>
+            <em>a single issue.</em>
+          </h2>
+          <p class="newsletter-strip__sub">Weekly persuasion literacy. No manipulation, no false urgency, no ironic countdown timers.</p>
+        </div>
+        <div class="beehiiv-embed">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="86d44aca-ff2a-4c07-8ebb-da3774307464"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
+
+  // Category filter
+  const catBtns = document.querySelectorAll('.cat-btn');
+  const postItems = document.querySelectorAll('.post-item');
+
+  catBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cat = btn.dataset.cat;
+      postItems.forEach(item => {
+        const tags = (item.dataset.tags || '').trim().split(/\s+/);
+        item.style.display = (cat === 'all' || tags.includes(cat)) ? '' : 'none';
+      });
+    });
+  });
+</script>

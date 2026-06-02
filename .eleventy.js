@@ -14,6 +14,12 @@ export default function (eleventyConfig) {
     return new Date(date).toISOString().split("T")[0];
   });
 
+  eleventyConfig.addFilter("limit", (arr, count) => arr.slice(0, count));
+  eleventyConfig.addFilter("offset", (arr, n) => arr.slice(n));
+  eleventyConfig.addFilter("except", (arr, url) => arr.filter(p => p.url !== url));
+
+  eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").reverse();
   });
