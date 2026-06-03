@@ -87,3 +87,26 @@ extraCss: /assets/css/post-page.css
   </section>
 
 </div>
+
+<script>
+  const article = document.querySelector('.post-body__inner article');
+  if (article) {
+    article.querySelectorAll('p, h2, h3, blockquote, img, ul, ol, hr').forEach(el => {
+      el.classList.add('reveal');
+    });
+  }
+
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }
+</script>
