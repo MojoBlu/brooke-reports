@@ -105,7 +105,17 @@ extraCss: /assets/css/post-page.css
         }
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    let delay = 0;
+    document.querySelectorAll('.reveal').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        setTimeout(() => el.classList.add('visible'), delay);
+        delay += 80;
+      } else {
+        observer.observe(el);
+      }
+    });
   } else {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
   }
