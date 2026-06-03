@@ -2,7 +2,7 @@
 title: "5 Red Flags on a Sales Page That Should Make You Pause"
 date: 2026-05-11
 category: Sales Pages
-exdescription: False Urgency is the most common. It's also the easiest to spot once you know what you're looking at. Here are the five things I check before I hand over a credit card.
+description: False Urgency is the most common. It's also the easiest to spot once you know what you're looking at. Here are the five things I check before I hand over a credit card.
 ---
 
 Most bad purchases don’t happen because we’re stupid.
