@@ -1,6 +1,17 @@
 {
   "title": "Brooke Reports",
-  "description": "Website of Brooke Reports",
+  "description": "Think clearly in a world designed to make you react.",
   "url": "https://brookereports.com",
-  "author": "Brooke"
+  "author": {
+    "name": "Brookie",
+    "bio": "Brookie writes Brooke Reports — field notes on thinking clearly in a world designed to make you react. Persuasion literacy, minus the gurus.",
+    "url": "https://brookereports.com/about/",
+    "image": "/assets/images/brookie.jpg",
+    "linkedin": "https://www.linkedin.com/in/brookecurnow/",
+    "instagram": "https://www.instagram.com/brookereports"
+  },
+  "publisher": {
+    "name": "Brooke Reports",
+    "logo": "/assets/images/brooke-reports-logo.png"
+  }
 }

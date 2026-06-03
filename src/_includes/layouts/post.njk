@@ -23,10 +23,13 @@ extraCss: /assets/css/post-page.css
     </div>
   </section>
 
-  {# ── ARTICLE BODY ── #}
+  {# ── ARTICLE BODY + AUTHOR BIO ── #}
   <section class="post-body">
     <div class="post-body__inner">
-      {{ content | safe }}
+      <article class="post">
+        {{ content | safe }}
+      </article>
+      {% include "author-bio.njk" %}
     </div>
   </section>
 

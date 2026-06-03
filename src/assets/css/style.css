@@ -765,7 +765,7 @@ p{max-width:68ch}              /* readable line length */
 .site-footer a:hover{color:var(--cream-light)}
 
 .site-footer__top{
-  padding:clamp(48px,6vw,80px) 0;
+  padding:clamp(48px,6vw,80px) var(--gutter);
   display:grid;
   grid-template-columns:1fr;
   gap:2.5rem;

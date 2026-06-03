@@ -178,7 +178,7 @@
   margin: 0;
 }
 
-.post-body__inner img {
+.post-body__inner img:not(.author-photo) {
   width: 100%;
   height: auto;
   border-radius: 3px;
@@ -198,6 +198,86 @@
   padding: 0.15em 0.4em;
   border-radius: 2px;
   color: var(--pt-ink);
+}
+
+/* ============================================
+   AUTHOR BIO
+============================================ */
+.brooke-reports-author {
+  margin: 5rem 0 3rem;
+  padding: 2rem 0;
+}
+
+.author-rule {
+  height: 2px;
+  background: #255938;
+  margin-bottom: 1.5rem;
+}
+
+.author-label {
+  margin: 0 0 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #255938;
+}
+
+.author-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.author-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #255938;
+}
+
+.author-content h3 {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  color: #1f1f1f;
+  font-size: 1.15rem;
+}
+
+.author-title {
+  margin: .25rem 0 1rem;
+  color: #666;
+  font-size: .58rem;
+}
+
+.author-bio-text {
+  max-width: 650px;
+  line-height: 1.7;
+  color: #333;
+  font-size: .6rem;
+}
+
+.author-links {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.author-links a {
+  color: #255938;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.author-links a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .author-layout { flex-direction: column; }
+  .author-photo { width: 100px; height: 100px; }
 }
 
 /* ============================================

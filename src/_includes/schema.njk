@@ -1,0 +1,80 @@
+{% if tags and "post" in tags %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump }},
+  "description": {{ (description or site.description) | dump }},
+  "image": "{{ site.url }}{{ image or site.author.image }}",
+  "datePublished": "{{ date | dateToISO }}",
+  "dateModified": "{{ date | dateToISO }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | dump }},
+    "url": "{{ site.author.url }}",
+    "image": "{{ site.url }}{{ site.author.image }}",
+    "sameAs": [
+      "{{ site.author.linkedin }}",
+      "{{ site.author.instagram }}"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.publisher.name | dump }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.publisher.logo }}"
+    }
+  }
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ title | dump }},
+  "description": {{ (description or site.description) | dump }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.publisher.name | dump }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.publisher.logo }}"
+    }
+  }
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | dump }},
+  "url": "{{ site.url }}"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | dump }},
+  "url": "{{ site.author.url }}",
+  "image": "{{ site.url }}{{ site.author.image }}",
+  "sameAs": [
+    "{{ site.author.linkedin }}",
+    "{{ site.author.instagram }}"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": {{ site.publisher.name | dump }}
+  }
+}
+</script>

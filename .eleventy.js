@@ -1,6 +1,7 @@
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   eleventyConfig.addFilter("readableDate", (date) => {
     return new Date(date).toLocaleDateString("en-US", {
@@ -19,6 +20,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("except", (arr, url) => arr.filter(p => p.url !== url));
 
   eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+  eleventyConfig.addFilter("dateToISO", (date) => new Date(date).toISOString());
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").reverse();
