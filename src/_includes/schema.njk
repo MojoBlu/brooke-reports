@@ -32,6 +32,138 @@
   }
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ site.url }}/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ title | dump | safe }},
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+
+{% elif schemaType == "Organization" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ title | dump | safe }},
+  "description": {{ (description or site.description) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site.publisher.name | dump | safe }},
+  "url": "{{ site.url }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}{{ site.publisher.logo }}"
+  },
+  "description": {{ site.description | dump | safe }},
+  "founder": {
+    "@type": "Person",
+    "name": {{ site.author.name | dump | safe }},
+    "url": "{{ site.author.url }}"
+  },
+  "sameAs": [
+    "{{ site.author.linkedin }}",
+    "{{ site.author.instagram }}"
+  ]
+}
+</script>
+
+{% elif schemaType == "AboutPage" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": {{ title | dump | safe }},
+  "description": {{ (description or site.description) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ site.author.name | dump | safe }},
+    "url": "{{ site.author.url }}",
+    "image": "{{ site.url }}{{ site.author.image }}",
+    "description": {{ site.author.bio | dump | safe }},
+    "sameAs": [
+      "{{ site.author.linkedin }}",
+      "{{ site.author.instagram }}"
+    ]
+  }
+}
+</script>
+
+{% elif schemaType == "ContactPage" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": {{ title | dump | safe }},
+  "description": {{ (description or site.description) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.publisher.name | dump | safe }},
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
+{% elif schemaType == "Blog" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": {{ title | dump | safe }},
+  "description": {{ (description or site.description) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.publisher.name | dump | safe }},
+    "url": "{{ site.url }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | dump | safe }},
+    "url": "{{ site.author.url }}"
+  }
+}
+</script>
+
+{% elif schemaType == "CollectionPage" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ title | dump | safe }},
+  "description": {{ (description or site.description) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+
 {% else %}
 <script type="application/ld+json">
 {
