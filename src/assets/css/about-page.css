@@ -66,9 +66,11 @@
 }
 
 .intro-section h2, .credentials h2, .credentials h3,
-.origin h2, .about-beliefs h2 {
+.about-beliefs h2 {
   color: var(--ab-ink);
 }
+
+.origin h2 { color: var(--cream-light); }
 
 /* ============================================
    ABOUT HEADER
@@ -221,7 +223,8 @@
    ORIGIN STORY
 ============================================ */
 .origin {
-  background: var(--ab-cream);
+  background: var(--forest);
+  color: var(--cream-light);
   padding: 7rem 0;
   position: relative;
   overflow: hidden;
@@ -235,12 +238,12 @@
   font-size: clamp(8rem, 25vw, 18rem);
   font-weight: 900;
   line-height: 1;
-  color: rgba(26,46,31,0.04);
+  color: rgba(255,255,255,0.03);
   pointer-events: none;
   user-select: none;
 }
 
-.origin__label { margin-bottom: 1.5rem; }
+.origin__label { margin-bottom: 1.5rem; color: var(--burnt-glow); }
 
 .origin__headline {
   font-family: var(--font-display);
@@ -250,22 +253,23 @@
   letter-spacing: -0.02em;
   margin-bottom: 2.5rem;
   max-width: 700px;
+  color: var(--cream-light);
 }
 
 .origin__headline em {
   font-style: italic;
   font-weight: 300;
-  color: var(--ab-accent);
+  color: var(--burnt-glow);
 }
 
 .origin__body {
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--ab-mid);
+  color: rgba(243,236,221,.72);
   max-width: var(--ab-reading);
 }
 
-.origin__body strong { color: var(--ab-ink); font-weight: 500; }
+.origin__body strong { color: var(--cream-light); font-weight: 500; }
 .origin__body p + p { margin-top: 1.2rem; }
 
 .origin__pullquote {
@@ -274,8 +278,8 @@
   font-weight: 700;
   font-style: italic;
   line-height: 1.3;
-  color: var(--ab-ink);
-  border-left: 3px solid var(--ab-accent);
+  color: var(--cream-light);
+  border-left: 3px solid var(--burnt-glow);
   padding-left: 1.5rem;
   margin: 2.5rem 0;
   max-width: 560px;
