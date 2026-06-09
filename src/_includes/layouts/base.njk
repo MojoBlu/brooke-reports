@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if overrideTitle %}{{ overrideTitle }}{% elif title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
@@ -41,7 +41,7 @@
       <nav class="site-nav" id="main-nav" aria-label="Main">
         <ul>
           <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
-          <li><a href="/blog/" {% if "/blog" in page.url %}aria-current="page"{% endif %}>Blog</a></li>
+          <li><a href="/blog/" {% if "/blog" in page.url %}aria-current="page"{% endif %}>Reports</a></li>
           <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
           <li><a href="/second-look/" {% if page.url == "/second-look/" %}aria-current="page"{% endif %}>Second Look</a></li>
           <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
@@ -61,7 +61,7 @@
 
       <div class="site-footer__brand">
         <a href="/" class="site-logo">Brooke Reports</a>
-        <p>Understanding persuasion.<br>Building clarity.<br>Living more freely.</p>
+        <p>A field guide<br>for seeing clearly.</p>
       </div>
 
       <nav class="site-footer__nav" aria-label="Explore">
@@ -86,14 +86,14 @@
         <p class="site-footer__nav-heading">Connect</p>
         <ul>
           <li><a href="/#newsletter">Subscribe</a></li>
-          <li><a href="#" rel="noopener noreferrer">Instagram</a></li>{# TODO: add Instagram URL #}
+          <li><a href="https://www.instagram.com/brookereports" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="#" rel="noopener noreferrer">X (Twitter)</a></li>{# TODO: add X URL #}
         </ul>
       </nav>
 
       <div class="site-footer__newsletter" id="newsletter">
-        <p class="site-footer__newsletter-heading">Get new reports &amp; notes</p>
-        <p class="site-footer__newsletter-sub">Straight to your inbox.</p>
+        <p class="site-footer__newsletter-heading">Get the field notes</p>
+        <p class="site-footer__newsletter-sub">A quiet dispatch on persuasion, attention, human behavior, and the clues hiding in plain sight.</p>
         <div class="beehiiv-embed">
           <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="86d44aca-ff2a-4c07-8ebb-da3774307464"></script>
         </div>

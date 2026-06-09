@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.njk
+overrideTitle: "Brooke Reports | Persuasion Literacy & Clear Thinking Field Guide"
 title: Home
-description: Brooke Reports helps you understand how persuasion works—so you can notice what's really going on beneath the surface and make clearer, calmer decisions.
+description: "Brooke Reports is a cozy field guide to persuasion literacy, marketing psychology, attention traps, and clear thinking; helping you spot pressure, hype, vague claims, and emotional framing before they shape your decisions."
 schemaType: Organization
 ---
 
@@ -12,16 +13,17 @@ schemaType: Organization
   <div class="wrap hero__inner">
 
     <div class="hero__text">
-      <p class="eyebrow hero__eyebrow">Marketing Psychology &amp; Persuasion Literacy</p>
+      <p class="eyebrow hero__eyebrow">Persuasion Literacy &middot; Marketing Psychology &middot; Clear Thinking</p>
       <h1 class="hero__headline">
-        <span class="hero__line">Read the Room.</span>
-        <span class="hero__line">Spot the Pressure.</span>
-        <span class="hero__line hero__line--italic"><em><span class="hero__drawn">Think More Clearly.</span></em></span>
+        <span class="hero__line">A Field Guide</span>
+        <span class="hero__line">for Seeing</span>
+        <span class="hero__line hero__line--italic"><em><span class="hero__drawn">Clearly.</span></em></span>
       </h1>
-      <p class="hero__lede">Brooke Reports helps you understand how persuasion works—so you can notice what's really going on beneath the surface and make clearer, calmer decisions.</p>
+      <p class="hero__lede">Brooke Reports helps curious, ambitious people notice the pressure, framing, hype, and emotional signals shaping their decisions&mdash;so they can slow down, read the room, and think clearly before someone else quietly takes the wheel.</p>
+      <p class="hero__small-line">Cozy detective agency energy, minus the murders. Investigating confusing sales pages, attention traps, internet hype, and suspiciously shiny promises.</p>
       <div class="hero__ctas">
-        <a href="/blog/" class="btn btn-primary">Start Reading <span aria-hidden="true">→</span></a>
-        <a href="/second-look/" class="btn btn-ghost">See Second Look</a>
+        <a href="/blog/" class="btn btn-primary">Start Reading <span aria-hidden="true">&rarr;</span></a>
+        <a href="/second-look/" class="btn btn-ghost">Try Second Look</a>
       </div>
     </div>
 
@@ -59,16 +61,82 @@ schemaType: Organization
 
 
 {# ======================================================== #}
+{# FIELD GUIDE INTRO                                         #}
+{# ======================================================== #}
+<section class="field-guide-intro">
+  <div class="wrap field-guide-intro__inner">
+    <div class="field-guide-intro__lead">
+      <p class="eyebrow">What Brooke Reports Helps You See</p>
+      <h2>Modern life is persuasive. That does not mean you have to be easy to steer.</h2>
+    </div>
+
+    <div class="field-guide-intro__copy">
+      <p>Every day, you are surrounded by messages trying to move you. Buy this. Believe this. Hurry up. Trust me. Fix yourself. Do not miss out. Everyone else is already ahead.</p>
+      <p>Most of it is not evil. Most of it is not even hidden. It is just designed.</p>
+      <p>Brooke Reports helps you notice how persuasion works in marketing, media, business advice, online offers, social platforms, and everyday decision-making&mdash;so you can separate the signal from the pressure.</p>
+      <p class="field-guide-intro__punch">Persuasion literacy for people who want to stay curious without getting played.</p>
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# CASES WE TAKE                                             #}
+{# ======================================================== #}
+<section class="cases-we-take">
+  <div class="wrap">
+    <div class="cases-we-take__header">
+      <p class="eyebrow">What We Investigate</p>
+      <h2>Cases We Take</h2>
+      <p>Not murders. Not conspiracy boards. Just the everyday confusion that shows up wearing a polished headline and very confident shoes.</p>
+    </div>
+
+    <div class="cases-we-take__grid">
+      <article class="case-card">
+        <p class="case-card__label">Case 01</p>
+        <h3>Persuasive Marketing</h3>
+        <p>Sales pages, offers, testimonials, urgency, authority signals, vague promises, and shiny claims that may or may not contain actual evidence.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 02</p>
+        <h3>Attention Traps</h3>
+        <p>The feeds, apps, notifications, trends, and tiny design choices that quietly tax your focus before you have even had coffee.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 03</p>
+        <h3>Social Pressure</h3>
+        <p>The group norms, status signals, identity cues, and invisible &ldquo;everyone is doing this&rdquo; energy that can make a decision feel obvious when it is not.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 04</p>
+        <h3>Business Advice &amp; Internet Hype</h3>
+        <p>Frameworks, gurus, creator economy promises, productivity claims, and advice that sounds smart until you ask, &ldquo;For whom? Under what conditions?&rdquo;</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 05</p>
+        <h3>Human Behavior</h3>
+        <p>Cognitive biases, emotional framing, decision fatigue, incentives, body language, and the ordinary human patterns that make smart people surprisingly persuadable.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
 {# FEATURED REPORTS                                          #}
 {# ======================================================== #}
 <section class="featured-reports">
   <div class="wrap">
     <div class="featured-reports__header">
       <div>
-        <p class="eyebrow">Featured Reports</p>
-        <h2 class="featured-reports__heading">New Ideas.<br>Deeper Signals.</h2>
+        <p class="eyebrow">Latest Field Notes</p>
+        <h2 class="featured-reports__heading">Fresh clues.<br>Clearer choices.</h2>
       </div>
-      <a href="/blog/" class="featured-reports__all">View all reports <span aria-hidden="true">→</span></a>
+      <a href="/blog/" class="featured-reports__all">Read all reports <span aria-hidden="true">&rarr;</span></a>
     </div>
 
     <div class="featured-reports__grid">
@@ -96,7 +164,7 @@ schemaType: Organization
           <footer class="report-card__meta">
             <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
             {% if post.data.readTime %}
-            <span aria-hidden="true"> · </span><span>{{ post.data.readTime }} min read</span>
+            <span aria-hidden="true"> &middot; </span><span>{{ post.data.readTime }} min read</span>
             {% endif %}
           </footer>
         </div>
@@ -121,10 +189,11 @@ schemaType: Organization
   <div class="wrap second-look-promo__inner">
 
     <div class="second-look-promo__lead">
-      <p class="eyebrow">Calm. Clear. Useful.</p>
+      <p class="eyebrow">Before You Buy the Thing</p>
       <h2>Second Look</h2>
-      <p class="second-look-promo__desc">A practical tool for evaluating persuasive offers, claims, and choices—so you can respond less, and decide better.</p>
-      <a href="/second-look/" class="second-look-promo__link">Learn how it works <span aria-hidden="true">→</span></a>
+      <p class="second-look-promo__desc">A simple tool for evaluating persuasive sales pages, online offers, and bold claims before you make a decision.</p>
+      <p class="second-look-promo__desc">Pause the pitch, check the evidence, spot the pressure, and choose with clarity.</p>
+      <a href="/second-look/" class="second-look-promo__link">Try Second Look <span aria-hidden="true">&rarr;</span></a>
     </div>
 
     <div class="second-look-promo__features">
@@ -138,7 +207,7 @@ schemaType: Organization
         </div>
         <div>
           <p class="second-look-feature__title">Pause the Pitch</p>
-          <p class="second-look-feature__desc">Step out of the moment so you can think straight.</p>
+          <p class="second-look-feature__desc">Step out of the emotional momentum long enough to think clearly.</p>
         </div>
       </div>
 
@@ -152,7 +221,7 @@ schemaType: Organization
         </div>
         <div>
           <p class="second-look-feature__title">Check the Claims</p>
-          <p class="second-look-feature__desc">Look for what's true, what's missing, and what's implied.</p>
+          <p class="second-look-feature__desc">Separate what is promised from what is actually supported.</p>
         </div>
       </div>
 
@@ -167,7 +236,7 @@ schemaType: Organization
         </div>
         <div>
           <p class="second-look-feature__title">Spot the Pressure</p>
-          <p class="second-look-feature__desc">Name the tactics. Reduce the influence.</p>
+          <p class="second-look-feature__desc">Notice urgency, authority, social proof, scarcity, and framing before they steer the decision.</p>
         </div>
       </div>
 
@@ -181,7 +250,7 @@ schemaType: Organization
         </div>
         <div>
           <p class="second-look-feature__title">Choose with Clarity</p>
-          <p class="second-look-feature__desc">Make decisions that fit your values and your goals.</p>
+          <p class="second-look-feature__desc">Make the choice that fits your goals, values, timing, budget, and real life.</p>
         </div>
       </div>
 
@@ -222,8 +291,9 @@ schemaType: Organization
 
     <div class="about-teaser__body">
       <p class="eyebrow">About Brooke Reports</p>
-      <h2>Thoughtful. Sharp. Anti-Hype.</h2>
-      <p>Brooke Reports is an independent media and education brand exploring marketing psychology, influence, and human behavior. We believe understanding persuasion makes you more free—not more cynical.</p>
+      <h2>An old-school detective desk for modern decision-making.</h2>
+      <p>Brooke Reports is an independent field guide to persuasion, attention, marketing psychology, and human behavior. We investigate the forces that shape what people notice, feel, trust, buy, believe, and ignore.</p>
+      <p>Not to make you cynical. Not to prove everything is manipulation. Not to turn every sales page into a crime scene. The goal is simpler than that: to help you see what is happening before you decide what to do.</p>
       <ul class="about-teaser__values" aria-label="Our values">
         <li>
           <div class="about-teaser__value-icon" aria-hidden="true">
@@ -237,7 +307,7 @@ schemaType: Organization
           </div>
           <div>
             <strong>Evidence over noise.</strong>
-            <p>We research deeply and write clearly.</p>
+            <p>We separate claims from support, receipts from vibes, and signal from sparkle.</p>
           </div>
         </li>
         <li>
@@ -251,7 +321,7 @@ schemaType: Organization
           </div>
           <div>
             <strong>Curious, not cynical.</strong>
-            <p>We ask better questions instead of rushing to conclusions.</p>
+            <p>We look for incentives, frames, and missing context without assuming villainy.</p>
           </div>
         </li>
         <li>
@@ -264,7 +334,7 @@ schemaType: Organization
           </div>
           <div>
             <strong>Human first.</strong>
-            <p>Because behind every decision is a real person.</p>
+            <p>Because behind every click, pause, purchase, and doubt is a real person trying to choose well.</p>
           </div>
         </li>
       </ul>
@@ -272,10 +342,45 @@ schemaType: Organization
 
     <div class="about-teaser__quote-wrap">
       <blockquote class="about-teaser__quote">
-        <p>The goal isn't to resist everything. It's to recognize what's real—so you can choose what matters.</p>
-        <cite>— Brooke</cite>
+        <p>The goal is not to distrust everything. The goal is to notice enough that your choices still belong to you.</p>
+        <cite>&mdash; Brooke</cite>
       </blockquote>
     </div>
 
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# HOMEPAGE FAQ                                              #}
+{# ======================================================== #}
+<section class="homepage-faq">
+  <div class="wrap homepage-faq__inner">
+    <div class="homepage-faq__header">
+      <p class="eyebrow">The Case File</p>
+      <h2>What is Brooke Reports?</h2>
+    </div>
+
+    <div class="homepage-faq__list">
+      <article class="homepage-faq__item">
+        <h3>What is Brooke Reports?</h3>
+        <p>Brooke Reports is a cozy field guide to persuasion literacy, marketing psychology, attention, and clear thinking. It helps readers understand how messages, platforms, offers, social pressure, and emotional framing influence decisions.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>Who is Brooke Reports for?</h3>
+        <p>Brooke Reports is for curious, ambitious people who want to make better decisions without becoming cynical. It is especially useful for course buyers, creators, freelancers, small business owners, online learners, and anyone who wants to understand how persuasion works in everyday life.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>What does Brooke Reports cover?</h3>
+        <p>Brooke Reports covers marketing psychology, sales psychology, media literacy, the attention economy, decision-making, cognitive biases, influence tactics, online offers, vague promises, urgency, social proof, and the hidden pressure inside modern communication.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>Is Brooke Reports anti-marketing?</h3>
+        <p>No. Brooke Reports is not anti-marketing. It is anti-confusion, anti-hype, and anti-pressure. Ethical persuasion helps people make informed choices. Manipulative persuasion tries to bypass judgment.</p>
+      </article>
+    </div>
   </div>
 </section>
