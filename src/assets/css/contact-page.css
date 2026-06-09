@@ -2,7 +2,7 @@
 
 :root {
   --ct-black: #1a2e1f;
-  --ct-white: #f5f2ee;
+  --ct-white: var(--cream);
   --ct-cream: #e8e4da;
   --ct-ink: #1a2e1f;
   --ct-accent: #c8441a;
@@ -30,11 +30,12 @@
 }
 
 /* ---- heading color overrides for dark sections ---- */
-.contact-header h1, .contact-header h2 {
-  color: var(--ct-white);
+.contact-header h1, .contact-header h2,
+.speaking h2 {
+  color: var(--cream-light);
 }
 
-.self-filter h2, .speaking h2,
+.self-filter h2,
 .contact-form-section h2, .credentials h2 {
   color: var(--ct-ink);
 }
@@ -103,7 +104,7 @@
    SELF-FILTER FAQ
 ============================================ */
 .self-filter {
-  background: var(--ct-cream);
+  background: var(--cream);
   padding: 7rem 0;
 }
 
@@ -213,9 +214,19 @@
    SPEAKING
 ============================================ */
 .speaking {
-  background: var(--ct-white);
+  background: var(--forest);
+  color: var(--cream-light);
   padding: 7rem 0;
 }
+
+.speaking .ct-label { color: var(--burnt-glow); }
+.speaking__headline em { color: rgba(243,236,221,.45); }
+.speaking__body { color: rgba(243,236,221,.72); }
+.speaking__body strong { color: var(--burnt-glow); }
+.topics-list { border-top-color: rgba(243,236,221,.15); }
+.topic-item { border-bottom-color: rgba(243,236,221,.15); }
+.topic-item__text { color: var(--cream-light); }
+.topic-item__text em { color: rgba(243,236,221,.5); }
 
 .speaking__inner {
   display: grid;
@@ -291,7 +302,7 @@
    CONTACT FORM SECTION
 ============================================ */
 .contact-form-section {
-  background: var(--ct-cream);
+  background: var(--cream);
   padding: 7rem 0;
 }
 

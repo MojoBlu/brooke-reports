@@ -477,7 +477,12 @@ p{max-width:68ch}              /* readable line length */
    ============================================================ */
 .featured-reports{
   padding:clamp(64px,8vw,100px) 0;
+  background:var(--forest);
 }
+
+.featured-reports .eyebrow{color:var(--burnt-glow)}
+.featured-reports__heading{color:var(--cream-light)}
+.featured-reports__all{color:var(--burnt-glow)}
 
 .featured-reports__header{
   display:flex;
@@ -1328,3 +1333,175 @@ p{max-width:68ch}              /* readable line length */
 /* Beehiiv embed container — ensures iframe stretches full width */
 .beehiiv-embed { width: 100%; }
 .beehiiv-embed iframe { width: 100% !important; min-width: 0 !important; }
+
+/* ============================================================
+   HERO — SMALL LINE
+   ============================================================ */
+.hero__small-line{
+  color:rgba(243,236,221,.5);
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:var(--fs-small);
+  max-width:48ch;
+  margin-top:-1.25rem; /* tighten gap below lede */
+  margin-bottom:2rem;
+}
+
+@media(prefers-reduced-motion:no-preference){
+  .hero__small-line{
+    opacity:0;transform:translateY(10px);
+    animation:heroFadeUp .45s ease forwards 1.1s;
+  }
+}
+
+/* ============================================================
+   FIELD GUIDE INTRO
+   ============================================================ */
+.field-guide-intro{
+  padding:clamp(64px,8vw,100px) 0;
+}
+
+.field-guide-intro__inner{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2.5rem;
+}
+
+@media(min-width:800px){
+  .field-guide-intro__inner{
+    grid-template-columns:1fr 1.4fr;
+    gap:clamp(3rem,6vw,6rem);
+    align-items:start;
+  }
+}
+
+.field-guide-intro__lead h2{margin:.5rem 0 0}
+
+.field-guide-intro__copy p{
+  color:var(--ink-soft);
+  margin-bottom:1rem;
+}
+
+.field-guide-intro__copy p:last-child{margin-bottom:0}
+
+.field-guide-intro__punch{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.15rem;
+  color:var(--ink) !important;
+  border-top:2px solid var(--burnt);
+  padding-top:1rem;
+  margin-top:1.5rem !important;
+}
+
+/* ============================================================
+   CASES WE TAKE
+   ============================================================ */
+.cases-we-take{
+  padding:clamp(64px,8vw,100px) 0;
+  background:var(--paper);
+}
+
+.cases-we-take__header{
+  max-width:640px;
+  margin:0 0 clamp(2.5rem,4vw,3.5rem);
+}
+
+.cases-we-take__header h2{margin:.5rem 0 .875rem}
+
+.cases-we-take__header>p{
+  color:var(--ink-soft);
+  margin:0;
+}
+
+.cases-we-take__grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.25rem;
+}
+
+@media(min-width:580px){
+  .cases-we-take__grid{grid-template-columns:1fr 1fr}
+}
+
+@media(min-width:900px){
+  .cases-we-take__grid{grid-template-columns:repeat(3,1fr)}
+}
+
+.case-card{
+  background:var(--cream-light);
+  border-radius:4px;
+  padding:1.75rem 1.5rem;
+  border-top:3px solid var(--burnt);
+  border-left:1px solid var(--line);
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.case-card__label{
+  font-family:var(--font-mono);
+  font-size:var(--fs-label);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:500;
+  color:var(--burnt);
+  margin-bottom:.75rem;
+}
+
+.case-card h3{
+  font-size:1.1rem;
+  margin:0 0 .625rem;
+}
+
+.case-card p{
+  font-size:var(--fs-small);
+  color:var(--ink-soft);
+  margin:0;
+}
+
+/* ============================================================
+   HOMEPAGE FAQ
+   ============================================================ */
+.homepage-faq{
+  padding:clamp(64px,8vw,100px) 0;
+  background:var(--paper);
+}
+
+.homepage-faq__inner{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2.5rem;
+}
+
+@media(min-width:860px){
+  .homepage-faq__inner{
+    grid-template-columns:1fr 2fr;
+    gap:clamp(3rem,6vw,6rem);
+    align-items:start;
+  }
+}
+
+.homepage-faq__header h2{margin:.5rem 0 0}
+
+.homepage-faq__list{
+  display:flex;
+  flex-direction:column;
+}
+
+.homepage-faq__item{
+  border-top:1px solid var(--line);
+  padding:1.5rem 0;
+}
+
+.homepage-faq__item:last-child{border-bottom:1px solid var(--line)}
+
+.homepage-faq__item h3{
+  font-size:1.05rem;
+  margin:0 0 .625rem;
+}
+
+.homepage-faq__item p{
+  font-size:var(--fs-small);
+  color:var(--ink-soft);
+  margin:0;
+}

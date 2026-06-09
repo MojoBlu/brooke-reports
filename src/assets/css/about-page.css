@@ -2,7 +2,7 @@
 
 :root {
   --ab-black: #1a2e1f;
-  --ab-white: #f5f2ee;
+  --ab-white: var(--cream);
   --ab-cream: #e8e4da;
   --ab-ink: #1a2e1f;
   --ab-accent: #c8441a;

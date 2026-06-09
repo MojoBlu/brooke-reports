@@ -2,7 +2,7 @@
 
 :root {
   --bl-black: #1a2e1f;
-  --bl-white: #f5f2ee;
+  --bl-white: var(--cream);
   --bl-cream: #e8e4da;
   --bl-ink: #1a2e1f;
   --bl-accent: #c8441a;
