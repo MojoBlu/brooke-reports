@@ -73,44 +73,6 @@ schemaType: Blog
   </section>
   {% endif %}
 
-  <!-- POST LIST -->
-  <section class="post-list" aria-labelledby="posts-label">
-    <div class="container">
-      <p class="bl-label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
-      {% if remainingPosts.length > 0 %}
-      <div class="post-list__grid" id="post-grid">
-        {% for post in remainingPosts %}
-        {% set isBig = (loop.index0 % 3 == 0) %}
-        <a href="{{ post.url }}"
-           class="post-item{% if isBig %} post-item--big{% endif %}"
-           data-tags="{% for tag in post.data.tags %}{{ tag | slug }} {% endfor %}">
-          <div>
-            <div class="post-item__meta">
-              {% if post.data.category %}
-              <span class="post-item__cat">{{ post.data.category }}</span>
-              {% endif %}
-              <time class="post-item__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-            </div>
-            <h3 class="post-item__title">{{ post.data.title }}</h3>
-            {% if isBig and post.data.description %}
-            <p class="post-item__excerpt">{{ post.data.description }}</p>
-            {% endif %}
-            {% if isBig %}
-            <span class="post-item__arrow" aria-hidden="true">→</span>
-            {% endif %}
-          </div>
-          {% if not isBig %}
-          <span class="post-item__arrow" aria-hidden="true">→</span>
-          {% endif %}
-        </a>
-        {% endfor %}
-      </div>
-      {% elif not featuredPost %}
-      <p class="post-list__empty">Posts coming soon.</p>
-      {% endif %}
-    </div>
-  </section>
-
   <!-- TRENDING + CATEGORIES -->
   <section class="trending" aria-label="Start here and browse by topic">
     <div class="container">
@@ -148,6 +110,44 @@ schemaType: Blog
           {% endif %}
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- POST LIST -->
+  <section class="post-list" aria-labelledby="posts-label">
+    <div class="container">
+      <p class="bl-label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
+      {% if remainingPosts.length > 0 %}
+      <div class="post-list__grid" id="post-grid">
+        {% for post in remainingPosts %}
+        {% set isBig = (loop.index0 % 3 == 0) %}
+        <a href="{{ post.url }}"
+           class="post-item{% if isBig %} post-item--big{% endif %}"
+           data-tags="{% for tag in post.data.tags %}{{ tag | slug }} {% endfor %}">
+          <div>
+            <div class="post-item__meta">
+              {% if post.data.category %}
+              <span class="post-item__cat">{{ post.data.category }}</span>
+              {% endif %}
+              <time class="post-item__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            </div>
+            <h3 class="post-item__title">{{ post.data.title }}</h3>
+            {% if isBig and post.data.description %}
+            <p class="post-item__excerpt">{{ post.data.description }}</p>
+            {% endif %}
+            {% if isBig %}
+            <span class="post-item__arrow" aria-hidden="true">→</span>
+            {% endif %}
+          </div>
+          {% if not isBig %}
+          <span class="post-item__arrow" aria-hidden="true">→</span>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% elif not featuredPost %}
+      <p class="post-list__empty">Posts coming soon.</p>
+      {% endif %}
     </div>
   </section>
 
