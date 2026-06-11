@@ -22,7 +22,7 @@ The group chat has been deliberating for forty minutes. Someone asked, innocentl
 
 Nobody in that chat was selling anything. That's exactly what made it work.
 
-A sales funnel — the quiz, the email sequence, the webinar, the checkout page with "Join 14,000 women who..." — is trying to recreate what just happened in your group chat, at scale, on purpose, for money. Same engine. Different driver. The question worth sitting with: if the mechanism is identical, how do you tell the honest version from the staged one?
+A sales funnel - the quiz, the email sequence, the webinar, the checkout page with "Join 14,000 women who..." - is trying to recreate what just happened in your group chat, at scale, on purpose, for money. Same engine. Different driver. The question worth sitting with: if the mechanism is identical, how do you tell the honest version from the staged one?
 
 ## What is social proof, actually?
 
@@ -32,9 +32,9 @@ A sales funnel — the quiz, the email sequence, the webinar, the checkout page 
 
 Because the conditions are perfect. Social proof fires hardest when two things are true: you're uncertain, and the people you're watching feel like *your* people.
 
-The research here is old and stubborn. In Solomon Asch's conformity experiments in the 1950s, people gave obviously wrong answers about the length of a line on a card — because everyone around them gave that answer first. Decades of follow-up work across cultures confirmed the pull is real, though how strong it is varies by where and who you are. The line on the card had a right answer. Your sunscreen question doesn't. Uncertainty turns the dial up.
+The research here is old and stubborn. In Solomon Asch's conformity experiments in the 1950s, people gave obviously wrong answers about the length of a line on a card; because everyone around them gave that answer first. Decades of follow-up work across cultures confirmed the pull is real, though how strong it is varies by where and who you are. The line on the card had a right answer. Your sunscreen question doesn't. Uncertainty turns the dial up.
 
-And a group chat adds the second ingredient: these are people you trust, with no commission on the sale. A friend's "I've repurchased it twice" carries more weight than any ad copy ever written, because the incentive structure is clean. She gains nothing if you buy. (Well — nothing but the small glow of being right about sunscreen. Which, fine, is not nothing.)
+And a group chat adds the second ingredient: these are people you trust, with no commission on the sale. A friend's "I've repurchased it twice" carries more weight than any ad copy ever written, because the incentive structure is clean. She gains nothing if you buy. (Well... nothing but the small glow of being right about sunscreen. Which, fine, is not nothing.)
 
 Which is the whole problem, from a marketer's point of view. They can't be your friend. So they build sets.
 
@@ -42,9 +42,9 @@ Which is the whole problem, from a marketer's point of view. They can't be your 
 
 When we're not sure, we check what everyone else is doing — and "10,000 students enrolled" is engineered to be the everyone.
 
-Walk through any sales page and count the crowds: the testimonial carousel, the star ratings, the "as seen in" logos, the live counter of people "viewing this right now," the Facebook community you're invited to join before you've bought anything. Each one is a staged version of your group chat — a room arranged so that everyone in it already said yes before you walked in.
+Walk through any sales page and count the crowds: the testimonial carousel, the star ratings, the "as seen in" logos, the live counter of people "viewing this right now," the Facebook community you're invited to join before you've bought anything. Each one is a staged version of your group chat; a room arranged so that everyone in it already said yes before you walked in.
 
-Some of it is real. Plenty of products do have 10,000 customers. But notice what you can and can't check. Your group chat is verifiable; you know those people, you've seen their bathroom shelves. The sales page crowd is curated by the person who profits from it. The unhappy customers didn't get a carousel slot. (If you want the full anatomy of that trick, the [testimonial teardown](/spot-fake-testimonials/) goes deeper.)
+Some of it is real. Plenty of products do have 10,000 customers. But notice what you can and can't check. Your group chat is verifiable; you know those people, you've seen their bathroom shelves. The sales page crowd is curated by the person who profits from it. The unhappy customers didn't get a carousel slot. (If you want the full anatomy of that trick, the [testimonial teardown](/blog/spot-fake-testimonials/) goes deeper.)
 
 One of the cleaner field demonstrations of how crowds move behavior: researchers found hotel guests reused towels more when the card in the bathroom said most *previous guests in this room* had done so — the closer the crowd felt, the harder it pulled. Marketers read that study too. It's why the testimonial comes from "a tired mom of two in Ohio who almost didn't sign up," never from "a customer."
 
@@ -56,7 +56,7 @@ In the chat, you didn't decide to buy sunscreen. You decided to reply "omg same"
 
 Sales funnels build that staircase deliberately. The free quiz isn't generosity. It's the first yes, and every funnel is built as a staircase of them. Psychologists call it the foot-in-the-door effect: people who agree to a small request become more likely to agree to a larger, related one, because we like to act consistently with what we've already done. The original 1966 study asked homeowners to display a tiny sign before asking for a huge one; the meta-analytic verdict since is that the effect is real but modest. A nudge, not mind control. Funnels don't need mind control. They need a few percentage points, millions of times.
 
-There's a third borrowed ingredient, and it's the free stuff. The free masterclass isn't free. You pay in obligation — a debt the pitch at minute 47 is designed to collect. Reciprocity is strong in field studies (a mint with the restaurant check measurably raises tips), though how strong depends a lot on context. Your group chat runs on reciprocity too. The difference is that when your friend shares a link, the books balance with a "thanks babe." When a funnel gives you a free PDF, the invoice arrives later, dressed as an offer. The [webinar playbook](/webinar-sales-tactics/) is this exact sequence with a run time.
+There's a third borrowed ingredient, and it's the free stuff. The free masterclass isn't free. You pay in obligation; a debt the pitch at minute 47 is designed to collect. Reciprocity is strong in field studies (a mint with the restaurant check measurably raises tips), though how strong depends a lot on context. Your group chat runs on reciprocity too. The difference is that when your friend shares a link, the books balance with a "thanks babe." When a funnel gives you a free PDF, the invoice arrives later, dressed as an offer. The [webinar playbook](/blog/webinar-sales-tactics/) is this exact sequence with a run time.
 
 ## The Field Guide: how to spot staged social proof
 
@@ -68,7 +68,7 @@ There's a third borrowed ingredient, and it's the free stuff. The free mastercla
 
 ## Why this matters past the checkout page
 
-You are not gullible for trusting crowds. Trusting crowds is how humans got anything done — it's the reason you don't have to personally test every restaurant, mechanic, mattress, and medication on earth. The instinct is sound. The supply chain is what got compromised.
+You are not gullible for trusting crowds. Trusting crowds is how humans got anything done. It's the reason you don't have to personally test every restaurant, mechanic, mattress, and medication on earth. The instinct is sound. The supply chain is what got compromised.
 
 The people building funnels read the same conformity studies you just did, then asked a different question: not "how do I protect people from this," but "how do I render a crowd on demand?" That asymmetry — you on instinct, them on research — is the actual unfairness here. Closing it doesn't require becoming cynical about your group chat. It requires one new reflex: before the crowd moves you, check who hired the crowd.
 
