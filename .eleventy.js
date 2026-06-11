@@ -1,7 +1,28 @@
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/llms.txt");
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "posts",
+      limit: 20,
+    },
+    metadata: {
+      language: "en",
+      title: "Brooke Reports",
+      subtitle: "A cozy field guide to persuasion literacy, marketing psychology, attention traps, and clear thinking.",
+      base: "https://brookereports.com/",
+      author: {
+        name: "Brookie",
+      },
+    },
+  });
 
   eleventyConfig.addFilter("readableDate", (date) => {
     return new Date(date).toLocaleDateString("en-US", {

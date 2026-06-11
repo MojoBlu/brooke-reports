@@ -1,0 +1,18 @@
+# Brooke Reports
+
+> Brooke Reports is a cozy field guide to persuasion literacy, marketing psychology, attention traps, and clear thinking — helping readers spot pressure, hype, vague claims, and emotional framing before they shape decisions. Written by Brookie, an independent persuasion literacy educator. Not anti-marketing: anti-confusion, anti-hype, and anti-pressure.
+
+Brooke Reports covers marketing psychology, sales psychology, media literacy, the attention economy, decision-making, cognitive biases, influence tactics, online offers, urgency, social proof, and the hidden pressure inside modern communication. The site's audience is curious, ambitious people — course buyers, creators, freelancers, small business owners, and online learners — who want to make better decisions without becoming cynical.
+
+## Pages
+
+- [Home](https://brookereports.com/): Overview of Brooke Reports, what it investigates, and frequently asked questions
+- [Reports (Blog)](https://brookereports.com/blog/): Articles on persuasion literacy, invisible systems, ethical influence, and clearer decision-making
+- [Second Look](https://brookereports.com/second-look/): A web tool that analyzes any sales page and explains, in plain English, which persuasion tactics it uses — $27 for 100 analyses, one-time fee, no subscription
+- [About](https://brookereports.com/about/): Who Brookie is — 20+ years running a photography business, formal study of influence, and the origin story behind Brooke Reports
+- [Contact](https://brookereports.com/contact/): General inquiries, speaking requests (persuasion literacy, ethical influence, decision-making under pressure), and press
+
+## Feeds
+
+- [Atom feed](https://brookereports.com/feed.xml): Latest articles
+- [Sitemap](https://brookereports.com/sitemap.xml)
