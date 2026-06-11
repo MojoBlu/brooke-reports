@@ -1,5 +1,5 @@
 ---
-title: "Why $997 Crossed Out Makes $297 Feel Like Rescue"
+title: "Why a Crossed-Out $997 Makes $297 Feel Like a Bargain"
 seoTitle: "Price Anchoring: Why Crossed-Out Prices Make You Buy"
 description: "That crossed-out $997 was never the price. Here's how price anchoring works on your brain, and how to read a discount before it reads you."
 date: 2026-06-11
