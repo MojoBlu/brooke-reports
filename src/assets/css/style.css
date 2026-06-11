@@ -1335,6 +1335,28 @@ p{max-width:68ch}              /* readable line length */
 .beehiiv-embed iframe { width: 100% !important; min-width: 0 !important; }
 
 /* ============================================================
+   STATIC PAGE  (legal / simple content pages)
+   ============================================================ */
+.page{
+  max-width:760px;
+  margin:0 auto;
+  padding:clamp(48px,6vw,80px) var(--gutter);
+}
+
+.page h1{margin-bottom:1.5rem}
+.page h2{font-size:1.35rem;margin:2.5rem 0 .75rem}
+.page h3{font-size:1.1rem;margin:1.75rem 0 .5rem}
+
+.page p{margin-bottom:1rem;color:var(--ink-soft)}
+.page strong{color:var(--ink)}
+
+.page ul{margin:0 0 1rem 1.25rem;color:var(--ink-soft)}
+.page li{margin-bottom:.375rem}
+
+.page a{color:var(--burnt);font-weight:500}
+.page a:hover{text-decoration:underline}
+
+/* ============================================================
    HERO — SMALL LINE
    ============================================================ */
 .hero__small-line{
