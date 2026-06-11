@@ -61,7 +61,7 @@ There's a third borrowed ingredient, and it's the free stuff. The free mastercla
 ## The Field Guide: how to spot staged social proof
 
 - **Ask who built the crowd.** A friend's recommendation, a stranger's review, and a seller's testimonial wall are three different things wearing the same outfit. Only one of them was assembled by someone with a margin to protect.
-- **Check for verifiability.** Real crowds leave checkable traces — names, mixed reviews, three-star complaints about shipping. A crowd that is 100% delighted is a crowd that was cast.
+- **Check for verifiability.** Real crowds leave checkable traces: names, mixed reviews, three-star complaints about shipping. A crowd that is 100% delighted is a crowd that was cast.
 - **Notice the staircase.** If you've said three small yeses in the last ten minutes (quiz, email, free download), assume the big ask is coming and decide *now* whether you'd want it cold.
 - **Clock the obligation.** If something free is making you feel like you owe attention, name it. You can keep the PDF and skip the pitch. That's allowed.
 - **Separate "popular" from "right for me."** 14,000 enrollments tells you the marketing works. It tells you nothing about whether the thing works.
