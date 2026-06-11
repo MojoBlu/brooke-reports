@@ -3,7 +3,7 @@ title: "What Your Group Chat and a Sales Funnel Have in Common"
 seoTitle: "Social Proof in Everyday Life: How Group Pressure Shapes Decisions"
 description: "Social proof in everyday life is quieter than a crowd. Here’s how group chats, waitlists, and funnels make decisions feel pre-approved."
 date: 2026-06-11
-category: "exhibit-a"
+category: Exhibit A
 tags:
   - social proof
   - group pressure
