@@ -8,7 +8,7 @@ schemaType: Blog
 ---
 
 {% set featuredPost = collections.posts[0] %}
-{% set remainingPosts = collections.posts | offset(1) %}
+{% set remainingPosts = collections.posts | offset(1) | limit(3) %}
 
 <div class="bl-page">
 
