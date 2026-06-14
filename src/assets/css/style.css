@@ -389,14 +389,21 @@ p{max-width:68ch}              /* readable line length */
   .hero__collage{order:0}
 }
 
+/* transparent collage cutout — no box, no crop */
 .hero__collage img{
   width:100%;
   height:auto;
-  max-height:700px;
-  object-fit:cover;
-  border-radius:4px;
-  background:var(--forest-deep); /* visible while image loads */
-  min-height:240px;              /* placeholder height before image loads */
+  display:block;
+}
+
+@media(min-width:800px){
+  /* gentle enlarge + edge bleed like the design mockup;
+     .hero is overflow:hidden so the overflow clips cleanly */
+  .hero__collage img{
+    width:112%;
+    max-width:none;
+    margin-right:-12%;
+  }
 }
 
 /* — torn paper edge — */
