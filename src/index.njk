@@ -86,7 +86,10 @@ schemaType: Organization
 
         <div class="report-card__image">
           {% if post.data.image %}
-          <img src="{{ post.data.image }}" alt="" width="280" height="175" loading="lazy">
+          {% image post.data.image, "", {
+            sizes: "(min-width: 900px) 280px, (min-width: 580px) 50vw, 100vw",
+            widths: [280, 560]
+          } %}
           {% else %}
           <div class="report-card__placeholder" aria-hidden="true"></div>
           {% endif %}

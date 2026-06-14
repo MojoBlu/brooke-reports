@@ -23,6 +23,18 @@ extraCss: /assets/css/post-page.css
     </div>
   </section>
 
+  {# ── POST HERO IMAGE (from `image` front matter) ── #}
+  {% if image %}
+  <div class="container">
+    <div class="post-hero-image">
+      {% image image, imageAlt or "", {
+        sizes: "(min-width: 1240px) 1200px, 100vw",
+        widths: [600, 900, 1200]
+      } %}
+    </div>
+  </div>
+  {% endif %}
+
   {# ── ARTICLE BODY + AUTHOR BIO ── #}
   <section class="post-body">
     <div class="post-body__inner">

@@ -85,7 +85,7 @@
 ============================================ */
 .post-hero-image {
   background: var(--pt-ink);
-  aspect-ratio: 16/7;
+  aspect-ratio: 16/9;
   overflow: hidden;
 }
 
