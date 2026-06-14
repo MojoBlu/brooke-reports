@@ -538,10 +538,16 @@ p{max-width:68ch}              /* readable line length */
   box-shadow:0 2px 4px rgba(26,46,31,0.12), 0 6px 16px rgba(26,46,31,0.20);
 }
 
+.report-card__image{
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+}
+
 .report-card__image img,
 .report-card__placeholder{
   width:100%;
-  aspect-ratio:16/9;
+  height:100%;
   object-fit:cover;
   display:block;
 }
