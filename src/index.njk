@@ -253,26 +253,14 @@ schemaType: Organization
 
     {#
       IMAGE: about-image
-      Atmospheric — books, candlelight, study scene
-      Aspect ratio: 3:4
-      Provide in src/assets/images/:
-        about-image.jpg           400 × 533   JPEG fallback
-        about-image-400.webp      400 × 533
-        about-image-800.webp      800 × 1066  (2× retina)
+      Atmospheric — books, candlelight, study scene. 3:4 source.
+      The {% image %} shortcode generates the 400/800 widths in webp + jpeg.
     #}
     <div class="about-teaser__image">
-      <img
-        src="/assets/images/about-image.jpg"
-        srcset="
-          /assets/images/about-image-400.webp  400w,
-          /assets/images/about-image-800.webp  800w
-        "
-        sizes="(min-width: 900px) 28vw, 100vw"
-        alt=""
-        width="400"
-        height="533"
-        loading="lazy"
-      >
+      {% image "/assets/images/about-image.jpg", "", {
+        sizes: "(min-width: 900px) 28vw, 100vw",
+        widths: [400, 800]
+      } %}
     </div>
 
     <div class="about-teaser__body">
