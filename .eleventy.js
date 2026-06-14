@@ -1,6 +1,30 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import Image from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
+  // Responsive images: generate multiple widths + formats from one source file.
+  // Usage: {% image "/assets/images/foo.webp", "alt text", { sizes, widths, loading, fetchpriority, class } %}
+  eleventyConfig.addNunjucksAsyncShortcode("image", async function (src, alt, options = {}) {
+    const inputFile = src.startsWith("/") ? `src${src}` : src;
+    const metadata = await Image(inputFile, {
+      widths: options.widths || [560, 800, 1120],
+      formats: options.formats || ["webp", "jpeg"],
+      outputDir: "_site/assets/images/generated/",
+      urlPath: "/assets/images/generated/",
+    });
+
+    const attributes = {
+      alt: alt || "",
+      sizes: options.sizes || "100vw",
+      loading: options.loading || "lazy",
+      decoding: "async",
+    };
+    if (options.fetchpriority) attributes.fetchpriority = options.fetchpriority;
+    if (options.class) attributes.class = options.class;
+
+    return Image.generateHTML(metadata, attributes);
+  });
+
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
