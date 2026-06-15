@@ -31,7 +31,7 @@ schemaType: Blog
   {% if collections.tagList.length > 0 %}
   <nav class="category-bar" aria-label="Filter by topic">
     <div class="category-bar__inner">
-      <button class="cat-btn active" data-cat="all">All Posts</button>
+      <a href="/all-reports/" class="cat-btn">All Reports</a>
       {% for tag in collections.tagList %}
       <button class="cat-btn" data-cat="{{ tag | slug }}">{{ tag }}</button>
       {% endfor %}
