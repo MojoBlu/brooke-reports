@@ -97,18 +97,7 @@ schemaType: Blog
             {% endfor %}
           </ul>
         </div>
-        <div class="reveal reveal-delay-2">
-          {% if collections.tagList.length > 0 %}
-          <div class="categories-cloud">
-            <p class="bl-label categories-cloud__label">Browse by topic</p>
-            <div class="categories-cloud__tags">
-              {% for tag in collections.tagList %}
-              <a href="/tags/{{ tag | slug }}/" class="cat-tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          </div>
-          {% endif %}
-        </div>
+        
       </div>
     </div>
   </section>
