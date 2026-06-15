@@ -50,6 +50,7 @@
         <ul>
           <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
           <li><a href="/blog/" {% if "/blog" in page.url %}aria-current="page"{% endif %}>Reports</a></li>
+          <li><a href="/all-reports/" {% if page.url == "/all-reports/" %}aria-current="page"{% endif %}>All Reports</a></li>
           <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
           <li><a href="/second-look/" {% if page.url == "/second-look/" %}aria-current="page"{% endif %}>Second Look</a></li>
           <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
@@ -76,6 +77,7 @@
         <p class="site-footer__nav-heading">Explore</p>
         <ul>
           <li><a href="/blog/">Reports</a></li>
+          <li><a href="/all-reports/">All Reports</a></li>
           <li><a href="/second-look/">Second Look</a></li>
         </ul>
       </nav>

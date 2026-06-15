@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+title: All Reports
+description: Every Brooke Reports post in one place, newest first — persuasion literacy, invisible systems, and clearer thinking.
+permalink: /all-reports/
+extraCss: /assets/css/blog-page.css
+schemaType: CollectionPage
+---
+
+<div class="bl-page">
+
+  <!-- HEADER -->
+  <header class="blog-header" aria-label="All reports header">
+    <div class="container" style="position:relative">
+      <span class="blog-header__bg-text" aria-hidden="true">ALL</span>
+      <p class="blog-header__eyebrow">Brooke Reports</p>
+      <h1 class="blog-header__title">
+        ALL<br>
+        <em>Reports</em>
+      </h1>
+      <p class="blog-header__desc">
+        Every post in one place, newest first.
+      </p>
+    </div>
+  </header>
+
+  <!-- POST LIST -->
+  <section class="post-list" aria-labelledby="posts-label">
+    <div class="container">
+      <p class="bl-label" id="posts-label" style="margin-bottom:1.5rem">All posts</p>
+      {% if collections.posts.length > 0 %}
+      <div class="post-list__grid" id="post-grid">
+        {% for post in collections.posts %}
+        {% set isBig = (loop.index0 % 3 == 0) %}
+        <a href="{{ post.url }}"
+           class="post-item{% if isBig %} post-item--big{% endif %}"
+           data-tags="{% for tag in post.data.tags %}{{ tag | slug }} {% endfor %}">
+          <div>
+            <div class="post-item__meta">
+              {% if post.data.category %}
+              <span class="post-item__cat">{{ post.data.category }}</span>
+              {% endif %}
+              <time class="post-item__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            </div>
+            <h3 class="post-item__title">{{ post.data.title }}</h3>
+            {% if isBig and post.data.description %}
+            <p class="post-item__excerpt">{{ post.data.description }}</p>
+            {% endif %}
+            {% if isBig %}
+            <span class="post-item__arrow" aria-hidden="true">→</span>
+            {% endif %}
+          </div>
+          {% if not isBig %}
+          <span class="post-item__arrow" aria-hidden="true">→</span>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="post-list__empty">Posts coming soon.</p>
+      {% endif %}
+    </div>
+  </section>
+
+</div>
