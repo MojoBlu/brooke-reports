@@ -7,8 +7,8 @@ extraCss: /assets/css/blog-page.css
 schemaType: Blog
 ---
 
-{% set featuredPost = collections.posts[0] %}
-{% set remainingPosts = collections.posts | offset(1) | limit(3) %}
+{% set featuredPost = collections.posts | selectattr("fileSlug", "equalto", "persuasion-vs-manipulation") | first %}
+{% set remainingPosts = collections.posts | rejectattr("fileSlug", "equalto", "persuasion-vs-manipulation") | limit(3) %}
 
 <div class="bl-page">
 
@@ -84,7 +84,10 @@ schemaType: Blog
             HERE.
           </h2>
           <ul class="trending__list">
-            {% for post in collections.posts | limit(5) %}
+            {% set startHereSlugs = ["why-smart-people-fall-for-marketing", "illusory-truth-effect", "fake-scarcity-tactics", "social-proof-everyday-life", "confirmation-bias-research"] %}
+            {% for slug in startHereSlugs %}
+            {% set post = collections.posts | selectattr("fileSlug", "equalto", slug) | first %}
+            {% if post %}
             <a href="{{ post.url }}" class="trending-item reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index - 1 }}{% endif %}">
               <span class="trending-item__num">0{{ loop.index }}</span>
               <div>
@@ -94,6 +97,7 @@ schemaType: Blog
                 {% endif %}
               </div>
             </a>
+            {% endif %}
             {% endfor %}
           </ul>
         </div>
