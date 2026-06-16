@@ -7,8 +7,17 @@ extraCss: /assets/css/blog-page.css
 schemaType: Blog
 ---
 
-{% set featuredPost = collections.posts | selectattr("fileSlug", "equalto", "persuasion-vs-manipulation") | first %}
-{% set remainingPosts = collections.posts | rejectattr("fileSlug", "equalto", "persuasion-vs-manipulation") | limit(3) %}
+{% set featuredSlug = "persuasion-vs-manipulation" %}
+{% set featuredArr = [] %}
+{% set remainingPosts = [] %}
+{% for post in collections.posts %}
+  {% if post.fileSlug == featuredSlug %}
+    {% set _ = featuredArr.push(post) %}
+  {% elif remainingPosts.length < 3 %}
+    {% set _ = remainingPosts.push(post) %}
+  {% endif %}
+{% endfor %}
+{% set featuredPost = featuredArr[0] %}
 
 <div class="bl-page">
 
@@ -86,10 +95,11 @@ schemaType: Blog
           <ul class="trending__list">
             {% set startHereSlugs = ["why-smart-people-fall-for-marketing", "illusory-truth-effect", "fake-scarcity-tactics", "social-proof-everyday-life", "confirmation-bias-research"] %}
             {% for slug in startHereSlugs %}
-            {% set post = collections.posts | selectattr("fileSlug", "equalto", slug) | first %}
-            {% if post %}
-            <a href="{{ post.url }}" class="trending-item reveal{% if loop.index > 1 %} reveal-delay-{{ loop.index - 1 }}{% endif %}">
-              <span class="trending-item__num">0{{ loop.index }}</span>
+            {% set num = loop.index %}
+            {% for post in collections.posts %}
+            {% if post.fileSlug == slug %}
+            <a href="{{ post.url }}" class="trending-item reveal{% if num > 1 %} reveal-delay-{{ num - 1 }}{% endif %}">
+              <span class="trending-item__num">0{{ num }}</span>
               <div>
                 <p class="trending-item__title">{{ post.data.title }}</p>
                 {% if post.data.category %}
@@ -98,6 +108,7 @@ schemaType: Blog
               </div>
             </a>
             {% endif %}
+            {% endfor %}
             {% endfor %}
           </ul>
         </div>
