@@ -40,13 +40,13 @@ Which is the whole problem, from a marketer's point of view. They can't be your 
 
 ## How do sales funnels fake the crowd?
 
-When we're not sure, we check what everyone else is doing — and "10,000 students enrolled" is engineered to be the everyone.
+When we're not sure, we check what everyone else is doing; and "10,000 students enrolled" is engineered to be the everyone.
 
 Walk through any sales page and count the crowds: the testimonial carousel, the star ratings, the "as seen in" logos, the live counter of people "viewing this right now," the Facebook community you're invited to join before you've bought anything. Each one is a staged version of your group chat; a room arranged so that everyone in it already said yes before you walked in.
 
 Some of it is real. Plenty of products do have 10,000 customers. But notice what you can and can't check. Your group chat is verifiable; you know those people, you've seen their bathroom shelves. The sales page crowd is curated by the person who profits from it. The unhappy customers didn't get a carousel slot. (If you want the full anatomy of that trick, the [testimonial teardown](/blog/spot-fake-testimonials/) goes deeper.)
 
-One of the cleaner field demonstrations of how crowds move behavior: researchers found hotel guests reused towels more when the card in the bathroom said most *previous guests in this room* had done so — the closer the crowd felt, the harder it pulled. Marketers read that study too. It's why the testimonial comes from "a tired mom of two in Ohio who almost didn't sign up," never from "a customer."
+One of the cleaner field demonstrations of how crowds move behavior: researchers found hotel guests reused towels more when the card in the bathroom said most *previous guests in this room* had done so; the closer the crowd felt, the harder it pulled. Marketers read that study too. It's why the testimonial comes from "a tired mom of two in Ohio who almost didn't sign up," never from "a customer."
 
 ## Why does the funnel start with such a tiny ask?
 
@@ -70,7 +70,7 @@ There's a third borrowed ingredient, and it's the free stuff. The free mastercla
 
 You are not gullible for trusting crowds. Trusting crowds is how humans got anything done. It's the reason you don't have to personally test every restaurant, mechanic, mattress, and medication on earth. The instinct is sound. The supply chain is what got compromised.
 
-The people building funnels read the same conformity studies you just did, then asked a different question: not "how do I protect people from this," but "how do I render a crowd on demand?" That asymmetry — you on instinct, them on research — is the actual unfairness here. Closing it doesn't require becoming cynical about your group chat. It requires one new reflex: before the crowd moves you, check who hired the crowd.
+The people building funnels read the same conformity studies you just did, then asked a different question: not "how do I protect people from this," but "how do I render a crowd on demand?" That asymmetry *you on instinct, them on research* is the actual unfairness here. Closing it doesn't require becoming cynical about your group chat. It requires one new reflex: before the crowd moves you, check who hired the crowd.
 
 Your friends came free. That's the tell.
 

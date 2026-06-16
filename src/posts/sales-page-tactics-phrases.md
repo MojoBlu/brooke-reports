@@ -26,13 +26,13 @@ So here's the question worth asking before you scroll back to the price a third 
 
 ## What are the most common sales page tactics?
 
-The most common **sales page tactics** are five recurring sentence patterns: the crossed-out price, the enrollment count, the deadline, the press logos, and the cost-of-inaction question. Each one maps to a specific, well-documented psychological mechanism — anchoring, social proof, scarcity, authority cues, and loss aversion. They work as a system: the page builds desire, borrows credibility, then closes the exits.
+The most common **sales page tactics** are five recurring sentence patterns: the crossed-out price, the enrollment count, the deadline, the press logos, and the cost-of-inaction question. Each one maps to a specific, well-documented psychological mechanism; anchoring, social proof, scarcity, authority cues, and loss aversion. They work as a system: the page builds desire, borrows credibility, then closes the exits.
 
 You've seen all five this week, probably on the same page. Let's take them one at a time.
 
-## "Normally $997 — today, just $297"
+## "Normally $997, today, just $297"
 
-This is anchoring, and it's the most reliable trick on the page. Anchoring means the first number you see drags every later judgment toward it, even when that number is arbitrary. It's one of the most replicated findings in decision research — it survived the Many Labs mass-replication project, which is the academic equivalent of a background check. The crossed-out price isn't decoration. It's the anchor.
+This is anchoring, and it's the most reliable trick on the page. Anchoring means the first number you see drags every later judgment toward it, even when that number is arbitrary. It's one of the most replicated findings in decision research; it survived the Many Labs mass-replication project, which is the academic equivalent of a background check. The crossed-out price isn't decoration. It's the anchor.
 
 Here's the part the page doesn't mention: $997 may never have been the price. It doesn't need to be. The anchor works whether or not anyone has ever paid it, because your brain isn't asking "is $297 a fair price for this course?" It's asking "is $297 a good deal compared to $997?" Different question. Much easier to win.
 
@@ -40,27 +40,27 @@ We took this one apart in detail in [Why $997 Crossed Out Makes $297 Feel Like R
 
 ## "Join 10,000 students who've already transformed their business"
 
-When we're not sure, we check what everyone else is doing — and "10,000 students enrolled" is engineered to be the everyone. This is social proof, and the underlying research is some of the oldest in social psychology: Asch was demonstrating conformity pressure in the 1950s, and modern field experiments keep confirming that "most people in this situation do X" measurably moves behavior.
+When we're not sure, we check what everyone else is doing and "10,000 students enrolled" is engineered to be the everyone. This is social proof, and the underlying research is some of the oldest in social psychology: Asch was demonstrating conformity pressure in the 1950s, and modern field experiments keep confirming that "most people in this situation do X" measurably moves behavior.
 
-The number itself deserves a squint, though. Enrolled when? In what — the paid program, or the free PDF that fed the email list? Counted by whom? A number with no verification path isn't evidence. It's a vibe wearing a statistic's clothes. Same goes for the wall of glowing screenshots underneath it, which we've covered in [The Anatomy of a Testimonial](/spot-fake-testimonials/).
+The number itself deserves a squint, though. Enrolled when? In what? The paid program, or the free PDF that fed the email list? Counted by whom? A number with no verification path isn't evidence. It's a vibe wearing a statistic's clothes. Same goes for the wall of glowing screenshots underneath it, which we've covered in [The Anatomy of a Testimonial](/spot-fake-testimonials/).
 
 ## "Doors close Friday at midnight"
 
 Scarcity is real, but it's the squishiest of the five. Experiments do show that perceived scarcity raises wanting - the classic demo involved rating cookies from a jar of ten versus a jar of two, and the two-cookie jar won. But the research also shows people punish scarcity they detect as manufactured. Which is the part the countdown-timer plugins don't mention.
 
-And manufactured is often exactly what it is. The FTC's 2022 dark-patterns report names false urgency — fake countdown timers, baseless low-stock messages — as a deceptive design pattern. UK regulators forced major hotel booking sites to stop pressure-selling with false popularity and availability claims back in 2019. Some deadlines are real; cohorts do start on actual dates. The test is simple. Open the page in an incognito window. If the timer reset, the doors were never closing.
+And manufactured is often exactly what it is. The FTC's 2022 dark-patterns report names false urgency *fake countdown timers, baseless low-stock messages* as a deceptive design pattern. UK regulators forced major hotel booking sites to stop pressure-selling with false popularity and availability claims back in 2019. Some deadlines are real; cohorts do start on actual dates. The test is simple. Open the page in an incognito window. If the timer reset, the doors were never closing.
 
 We did the full natural history of this one in [Manufactured Urgency](/fake-scarcity-tactics/), if you want the long version.
 
 ## "As seen in Forbes, Business Insider, and Entrepreneur"
 
-Authority cues — credentials, titles, recognizable logos — genuinely increase trust and compliance. That part is well supported. What the logo bar doesn't tell you is *how* the seen-ness happened. You don't need a lab coat; a "Featured in Forbes" badge from a paid contributor placement does the same job at a fraction of the price, and entire services exist to sell exactly that.
+Authority cues *credentials, titles, recognizable logos* genuinely increase trust and compliance. That part is well supported. What the logo bar doesn't tell you is *how* the seen-ness happened. You don't need a lab coat; a "Featured in Forbes" badge from a paid contributor placement does the same job at a fraction of the price, and entire services exist to sell exactly that.
 
 Earned press has a byline, a date, and a journalist who chose the subject. A logo bar has none of those. Two minutes of searching the person's name plus the outlet usually settles which one you're looking at. If the "feature" is a contributor post they wrote themselves, the logo is a costume.
 
 ## "What is staying stuck costing you?"
 
-The quiet one. The other four sentences sell the product; this one sells the wound. It runs on loss aversion — people generally work harder to avoid losing something than to gain the equivalent thing, which is why the copy says "don't miss out" instead of "come get this." Framing the status quo as an ongoing loss converts *not buying* into something that hurts.
+The quiet one. The other four sentences sell the product; this one sells the wound. It runs on loss aversion; people generally work harder to avoid losing something than to gain the equivalent thing, which is why the copy says "don't miss out" instead of "come get this." Framing the status quo as an ongoing loss converts *not buying* into something that hurts.
 
 Okay, fair is fair: sometimes staying stuck does cost you something, and naming that isn't automatically manipulation. The tell is whether the page lets the question breathe or immediately answers it for you with a number ("every month you wait costs you $5,000 in lost revenue") that was invented in a copywriting session. The question is legitimate. The pre-loaded answer rarely is.
 
@@ -77,9 +77,9 @@ The field guide. Screenshot freely.
 
 ## The Turn
 
-None of this means you're gullible. These five sentences persist because they work on human cognition generally — on the people who wrote them, too. The page was built by professionals who tested every line against thousands of readers. You read it once, tired, at 11pm. That was never a fair fight, and feeling embarrassed about losing it is like feeling embarrassed that a locksmith got past your lock.
+None of this means you're gullible. These five sentences persist because they work on human cognition generally; on the people who wrote them, too. The page was built by professionals who tested every line against thousands of readers. You read it once, tired, at 11pm. That was never a fair fight, and feeling embarrassed about losing it is like feeling embarrassed that a locksmith got past your lock.
 
-Manual checking works; everything in the field guide above takes ten minutes. If you'd rather not do it by hand every time, that's what we built [Second Look](/second-look/) for — paste a sales page link, get back a plain-language breakdown of which of these patterns it's running and how hard. It's the field guide, automated.
+Manual checking works; everything in the field guide above takes ten minutes. If you'd rather not do it by hand every time, that's what we built [Second Look](/second-look/) for. Paste a sales page link, get back a plain-language breakdown of which of these patterns it's running and how hard. It's the field guide, automated.
 
 Either way: the page gets one read for the offer and one read for the machinery. You're allowed both.
 

@@ -18,15 +18,15 @@ faq:
     a: "Write down your current lean before you start. Then run the negative search first — the product name plus \"problems,\" \"refund,\" or \"quit.\" Read the strongest critic you can find, not the dumbest one. If your lean survives that, it earned its survival."
 ---
 
-The tabs are open. It's 10:40pm, you've been "looking into it" for two hours, and you have arrived — through diligent, independent research — at the exact conclusion you were leaning toward before you started.
+The tabs are open. It's 10:40pm, you've been "looking into it" for two hours, and you have arrived *through diligent, independent research* at the exact conclusion you were leaning toward before you started.
 
 Funny how that keeps happening.
 
-Maybe it was a supplement. A parenting method. A $1,400 certification program. You typed your question into the search bar, read eleven articles, watched two videos, and emerged informed. Except here's the question worth sitting with: did you research the question, or did you research the answer you wanted? Because those are two different activities that feel identical from the inside — and only one of them deserves the name.
+Maybe it was a supplement. A parenting method. A $1,400 certification program. You typed your question into the search bar, read eleven articles, watched two videos, and emerged informed. Except here's the question worth sitting with: did you research the question, or did you research the answer you wanted? Because those are two different activities that feel identical from the inside; and only one of them deserves the name.
 
 ## What is confirmation bias, actually?
 
-**Confirmation bias** is the tendency to seek out, notice, and remember evidence that supports what you already believe, while filtering out evidence that doesn't. It works at every stage — the question you ask, the sources you click, the standard of proof you apply — which is why two hours of sincere research can function as two hours of self-agreement. The bias runs automatically; knowing about it doesn't switch it off.
+**Confirmation bias** is the tendency to seek out, notice, and remember evidence that supports what you already believe, while filtering out evidence that doesn't. It works at every stage *the question you ask, the sources you click, the standard of proof you apply* which is why two hours of sincere research can function as two hours of self-agreement. The bias runs automatically; knowing about it doesn't switch it off.
 
 Psychologist Raymond Nickerson, who wrote the definitive review of the research, called it "a ubiquitous phenomenon in many guises." Ubiquitous meaning: you, me, scientists, judges, your aunt with the essential oils. Nobody is exempt. Some people just have better procedures.
 
@@ -34,9 +34,9 @@ Psychologist Raymond Nickerson, who wrote the definitive review of the research,
 
 Because the agreement starts before the first result loads. It starts in the search bar.
 
-Say you're considering an online business course and you're 70% sold. You don't type "is this course a scam." You type "is this course worth it" — and you've just asked the internet to argue your side. The phrasing of the question pre-sorts the answers. Pages titled "Why It's Worth Every Penny" are written to match exactly that query, often by affiliates who earn a commission when you enroll. Your research and their funnel use the same keywords. That's not a coincidence; it's the business model.
+Say you're considering an online business course and you're 70% sold. You don't type "is this course a scam." You type "is this course worth it" and you've just asked the internet to argue your side. The phrasing of the question pre-sorts the answers. Pages titled "Why It's Worth Every Penny" are written to match exactly that query, often by affiliates who earn a commission when you enroll. Your research and their funnel use the same keywords. That's not a coincidence; it's the business model.
 
-There's actual data on this. Researchers at Microsoft analyzed real search behavior on health questions and found that people overwhelmingly phrased queries in the positive form and clicked results that confirmed their starting belief — even when the balance of evidence pointed the other way. Search engines, optimizing for satisfaction, then learn to serve more of what gets clicked. You and the algorithm are confirming each other. It's a closed loop with two participants, and both of you feel productive.
+There's actual data on this. Researchers at Microsoft analyzed real search behavior on health questions and found that people overwhelmingly phrased queries in the positive form and clicked results that confirmed their starting belief even when the balance of evidence pointed the other way. Search engines, optimizing for satisfaction, then learn to serve more of what gets clicked. You and the algorithm are confirming each other. It's a closed loop with two participants, and both of you feel productive.
 
 This is the part nobody warns you about: the bias isn't only in your head. It's been built into the infrastructure, because content that agrees with the searcher outperforms content that complicates things.
 
@@ -44,19 +44,19 @@ This is the part nobody warns you about: the bias isn't only in your head. It's 
 
 Sometimes you do find the criticism. You're thorough. You read the one-star reviews, the skeptical Reddit thread, the "honest review" video. And then a quiet little process kicks in: the favorable evidence gets waved through, and the unfavorable evidence gets cross-examined.
 
-The five-star reviews? Reasonable people sharing their experience. The one-star reviews? Probably didn't do the work. Probably wanted a refund. Probably bitter. You don't decide to apply a double standard — it just happens, smooth as anything.
+The five-star reviews? Reasonable people sharing their experience. The one-star reviews? Probably didn't do the work. Probably wanted a refund. Probably bitter. You don't decide to apply a double standard: it just happens, smooth as anything.
 
-In a classic Stanford study, researchers showed people with strong opinions on a contested issue two pieces of evidence — one supporting their view, one opposing it. Both sides rated the study agreeing with them as more convincing and better conducted, and picked apart the methodology of the one that didn't. Same evidence, opposite verdicts, everyone certain they were being objective. The researchers called it biased assimilation: evidence doesn't land on a neutral surface. It lands on what you already feel, and gets graded accordingly.
+In a classic Stanford study, researchers showed people with strong opinions on a contested issue two pieces of evidence: one supporting their view, one opposing it. Both sides rated the study agreeing with them as more convincing and better conducted, and picked apart the methodology of the one that didn't. Same evidence, opposite verdicts, everyone certain they were being objective. The researchers called it biased assimilation: evidence doesn't land on a neutral surface. It lands on what you already feel, and gets graded accordingly.
 
-So when a marketer says "don't take my word for it — do your own research," that's not a risk they're taking. They know how the research goes. The phrase performs confidence while costing nothing, because they understand that a 70%-sold prospect researching their product is mostly going to find reasons to be 100% sold. "Do your own research" has become a sales technique precisely because of how predictably the research turns out.
+So when a marketer says "don't take my word for it, do your own research," that's not a risk they're taking. They know how the research goes. The phrase performs confidence while costing nothing, because they understand that a 70%-sold prospect researching their product is mostly going to find reasons to be 100% sold. "Do your own research" has become a sales technique precisely because of how predictably the research turns out.
 
 ## Why does more research make you more sure, not more right?
 
-Here's the cruel mechanical detail. Even when your eleven open tabs are all saying roughly the same thing because they're all drawing on the same three sources — or the same affiliate program — the repetition itself does work on you. Repeated statements feel truer than new ones, because your brain mistakes ease of processing for accuracy. The research on this (it's called the illusory truth effect, and it's one of the most robust findings in the field) shows it operates even on people who know the actual facts. We covered the full mechanism in [the illusory truth piece](/illusory-truth-effect/), but the short version for tonight: tab number nine doesn't add evidence. It adds *familiarity*, and familiarity is what certainty is made of.
+Here's the cruel mechanical detail. Even when your eleven open tabs are all saying roughly the same thing because they're all drawing on the same three sources *or the same affiliate program* the repetition itself does work on you. Repeated statements feel truer than new ones, because your brain mistakes ease of processing for accuracy. The research on this (it's called the illusory truth effect, and it's one of the most robust findings in the field) shows it operates even on people who know the actual facts. We covered the full mechanism in [the illusory truth piece](/illusory-truth-effect/), but the short version for tonight: tab number nine doesn't add evidence. It adds *familiarity*, and familiarity is what certainty is made of.
 
 Which means a long research session can leave you more confident and less accurate than when you started. You didn't gather eleven data points. You heard one claim eleven times and watched it harden into a fact.
 
-Okay, that's slightly unfair to research. Real research exists and works. But it has a defining feature most late-night sessions lack: it tries to lose. A scientist doesn't ask "how do I support my hypothesis" — the whole apparatus is built around attempting to break it. Peter Wason demonstrated back in 1960 that when people test their own ideas, they almost never attempt the test that could prove them wrong. They generate example after example that fits. The willingness to hunt for the breaking case is the entire difference between research and rehearsal.
+Okay, that's slightly unfair to research. Real research exists and works. But it has a defining feature most late-night sessions lack: it tries to lose. A scientist doesn't ask "how do I support my hypothesis" the whole apparatus is built around attempting to break it. Peter Wason demonstrated back in 1960 that when people test their own ideas, they almost never attempt the test that could prove them wrong. They generate example after example that fits. The willingness to hunt for the breaking case is the entire difference between research and rehearsal.
 
 ## How do you actually research something? (Field Guide)
 
@@ -69,11 +69,11 @@ Okay, that's slightly unfair to research. Real research exists and works. But it
 
 ## The part where you stop blaming yourself
 
-None of this means you're gullible, lazy, or bad at thinking. Confirmation bias shows up in trained scientists reviewing journal submissions. It is the factory setting of human cognition, and an entire commercial ecosystem — affiliate reviews, query-matched sales pages, "do your own research" copy — has been arranged around that setting on purpose. You brought a sincere question to an environment engineered to hand your existing feeling back to you with citations attached. (More on why intelligence doesn't protect you in [It's Not Stupid to Fall for This](/why-smart-people-fall-for-marketing/).)
+None of this means you're gullible, lazy, or bad at thinking. Confirmation bias shows up in trained scientists reviewing journal submissions. It is the factory setting of human cognition, and an entire commercial ecosystem *affiliate reviews, query-matched sales pages, "do your own research" copy* has been arranged around that setting on purpose. You brought a sincere question to an environment engineered to hand your existing feeling back to you with citations attached. (More on why intelligence doesn't protect you in [It's Not Stupid to Fall for This](/why-smart-people-fall-for-marketing/).)
 
 The fix isn't becoming a different kind of person. It's a five-minute procedure: name the lean, search against it, find the good critic. That's it. That's the whole upgrade.
 
-Research that can't fail isn't research. It's a ceremony — and you were the congregation and the sermon at the same time.
+Research that can't fail isn't research. It's a ceremony; and you were the congregation and the sermon at the same time.
 
 ## Receipts
 

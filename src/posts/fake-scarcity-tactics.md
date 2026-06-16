@@ -23,17 +23,17 @@ The cart page says 14:53. Then 14:52. A small red banner explains that your item
 
 You know it's fake. You can feel that it's fake. And your thumb is hovering anyway.
 
-That timer has a family tree, and it's longer than the internet. Manufactured urgency wasn't invented by a Shopify plugin — it was perfected by one. The question worth answering isn't whether the countdown is real. It's how a trick this old still works on people this smart.
+That timer has a family tree, and it's longer than the internet. Manufactured urgency wasn't invented by a Shopify plugin; it was perfected by one. The question worth answering isn't whether the countdown is real. It's how a trick this old still works on people this smart.
 
 ## What are fake scarcity tactics, actually?
 
-**Manufactured urgency** is the practice of inventing a time or supply constraint — a countdown timer, "only 3 left," a closing cart — to compress your decision-making window. It works by triggering loss aversion: the threat of losing access feels heavier than the appeal of gaining the product, so you decide fast to make the bad feeling stop. The constraint is the product of design, not inventory.
+**Manufactured urgency** is the practice of inventing a time or supply constraint; a countdown timer, "only 3 left," a closing cart; to compress your decision-making window. It works by triggering loss aversion: the threat of losing access feels heavier than the appeal of gaining the product, so you decide fast to make the bad feeling stop. The constraint is the product of design, not inventory.
 
 ## Where did "limited time only" come from?
 
-Long before pixels, there was the fire sale. Nineteenth-century merchants discovered that a store "forced" to liquidate drew crowds a store merely selling could not — and some discovered it so thoroughly that the going-out-of-business sale became a permanent business model. By the early 1900s, American cities were passing ordinances requiring licenses for closing sales, because too many stores had been closing, profitably, for years.
+Long before pixels, there was the fire sale. Nineteenth-century merchants discovered that a store "forced" to liquidate drew crowds a store merely selling could not; and some discovered it so thoroughly that the going-out-of-business sale became a permanent business model. By the early 1900s, American cities were passing ordinances requiring licenses for closing sales, because too many stores had been closing, profitably, for years.
 
-Department stores industrialized the deadline. The "one-day sale" and the "doorbuster" trained shoppers to treat the calendar itself as a price signal. Mail-order catalogs added the printed version: *offer expires*, *act now*, *supplies limited* — sentences engineered for an era when responding meant finding a stamp.
+Department stores industrialized the deadline. The "one-day sale" and the "doorbuster" trained shoppers to treat the calendar itself as a price signal. Mail-order catalogs added the printed version: *offer expires*, *act now*, *supplies limited* sentences engineered for an era when responding meant finding a stamp.
 
 Then television collapsed the response time to a phone call, and the infomercial turned urgency into theater. *But wait. Call in the next ten minutes.* The ten minutes were never real. The operators were, technically, standing by regardless. What mattered was the structure: a decision window narrow enough that the feeling could outrun the thinking.
 
@@ -43,21 +43,21 @@ The internet didn't change the tactic. It changed the cost of deploying it. A co
 
 Two mechanisms, both old, both documented.
 
-The first is scarcity itself. In the classic demonstration, Worchel, Lee, and Adewole (1975) showed that people rated identical cookies as more desirable when the jar held two instead of ten. Same cookie. Different count. Scarcity reliably raises wanting in experiments — though the research also shows people punish scarcity they detect as manufactured. Which is the part the countdown-timer plugins don't mention.
+The first is scarcity itself. In the classic demonstration, Worchel, Lee, and Adewole (1975) showed that people rated identical cookies as more desirable when the jar held two instead of ten. Same cookie. Different count. Scarcity reliably raises wanting in experiments; though the research also shows people punish scarcity they detect as manufactured. Which is the part the countdown-timer plugins don't mention.
 
 The second is loss aversion, the asymmetry Kahneman and Tversky put at the center of prospect theory in 1979: people generally work harder to avoid losing something than to gain it. This is why the timer's copy says "don't miss out" rather than "come get this." The frame is never *here is something good*. The frame is *something is being taken from you, and the clock is how fast.*
 
-Notice what this means for the "I'm too smart for this" defense. The tactic doesn't argue with your intelligence. It routes around it. The urgency signal lands as a feeling — a small spike of almost-loss — before your evaluating brain finishes its first sentence. You can know the cookie jar is staged and still want the two-cookie jar more. Knowing helps. It just doesn't help enough on its own, which is why the fix in the field guide below is structural, not motivational.
+Notice what this means for the "I'm too smart for this" defense. The tactic doesn't argue with your intelligence. It routes around it. The urgency signal lands as a feeling *a small spike of almost-loss* before your evaluating brain finishes its first sentence. You can know the cookie jar is staged and still want the two-cookie jar more. Knowing helps. It just doesn't help enough on its own, which is why the fix in the field guide below is structural, not motivational.
 
 ## How did the countdown timer become furniture?
 
 Somewhere in the 2010s, urgency stopped being a tactic and became a default setting. E-commerce platforms made it installable: timers that reset per visitor, "low stock" badges decoupled from any stock, "12 people are looking at this right now" messages generated by a random-number function.
 
-It got common enough that regulators built a vocabulary for it. The FTC's 2022 staff report on dark patterns names false urgency — fake countdown clocks, baseless low-stock and high-demand messages — as a core deceptive design pattern. A year earlier, the UK's competition authority had already extracted commitments from major hotel booking sites to stop pressure-selling claims that misled people about scarcity and demand.
+It got common enough that regulators built a vocabulary for it. The FTC's 2022 staff report on dark patterns names false urgency; fake countdown clocks, baseless low-stock and high-demand messages; as a core deceptive design pattern. A year earlier, the UK's competition authority had already extracted commitments from major hotel booking sites to stop pressure-selling claims that misled people about scarcity and demand.
 
 Read that again from the historical angle, because it's the same shape every time: the tactic appears, works, scales, saturates, and eventually draws a rulebook. The fire sale got licensing ordinances. The infomercial got truth-in-advertising actions. The countdown widget got a dark-patterns report. Manufactured urgency is not a glitch in modern marketing. It's a heritage breed.
 
-And the saturation is doing something interesting to the tactic's own effectiveness. A deadline only compresses your decision if you believe it. Every fake timer a reader catches — every "cart closes tonight!" email followed by Wednesday's "doors reopened!" email — spends down the credibility of all timers everywhere. The plugin economy is strip-mining the thing it depends on.
+And the saturation is doing something interesting to the tactic's own effectiveness. A deadline only compresses your decision if you believe it. Every fake timer a reader catches; every "cart closes tonight!" email followed by Wednesday's "doors reopened!" email; spends down the credibility of all timers everywhere. The plugin economy is strip-mining the thing it depends on.
 
 ## How do you spot manufactured urgency?
 
@@ -65,13 +65,13 @@ And the saturation is doing something interesting to the tactic's own effectiven
 - **Ask what the clock is attached to.** Event tickets expire because events have dates. A digital download "reserved for 15 minutes" is a constraint with no referent.
 - **Check the calendar, not the banner.** If the "final closing" of this offer also happened in March, you're looking at a season, not a deadline. Sellers who run fake closings tend to run them on a schedule.
 - **Watch for stacked urgency.** Timer plus low-stock badge plus "8 people viewing" is not three facts. It's one tactic wearing three outfits.
-- **Impose your own delay.** Decide that nothing bought under a countdown gets bought until tomorrow. Real offers survive a night's sleep. Manufactured ones usually reappear — with a fresh timer.
+- **Impose your own delay.** Decide that nothing bought under a countdown gets bought until tomorrow. Real offers survive a night's sleep. Manufactured ones usually reappear; with a fresh timer.
 
 ## Why this matters more than the $297
 
 Here's the part the tactic depends on you never saying out loud: feeling the pull is not a character flaw. The pull is the product of about 150 years of iteration, A/B tested across catalogs, broadcast slots, and checkout flows, refined against millions of people before it ever reached your cart page. You brought one tired brain. They brought a century of optimization.
 
-So the goal was never to stop feeling urgency. You will feel it; that's the machinery working as designed. The goal is to notice the feeling arrive and recognize it as *delivered* — placed there, on schedule, by someone who chose the font for the timer. What you do in the thirty seconds after that is where the whole game is decided.
+So the goal was never to stop feeling urgency. You will feel it; that's the machinery working as designed. The goal is to notice the feeling arrive and recognize it as *delivered* placed there, on schedule, by someone who chose the font for the timer. What you do in the thirty seconds after that is where the whole game is decided.
 
 The clock was never counting down for you. It was counting on you.
 
