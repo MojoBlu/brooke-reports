@@ -4,7 +4,7 @@ seoTitle: "Fake Scarcity Tactics: How Countdown Timers and \"Only 3 Left\" Work"
 description: "Countdown timers, \"only 3 left,\" cart deadlines. Where fake scarcity tactics came from, why they still work, and the one test that exposes them."
 date: 2026-06-11
 category: cold-case
-tags: [scarcity, urgency, countdown-timers, dark-patterns, persuasion-history]
+tags: [scarcity, urgency, countdown timers, dark patterns, persuasion history]
 primaryKeyword: "fake scarcity tactics"
 articleType: core
 image: /assets/images/posts/fake-scarcity.jpg

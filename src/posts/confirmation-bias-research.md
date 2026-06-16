@@ -4,7 +4,7 @@ seoTitle: "Confirmation Bias: Why Your Own Research Keeps Agreeing With You"
 description: "You researched it for two hours and — surprise — you were right all along. Here's why your own research keeps agreeing with you, and how to fix it."
 date: 2026-06-12
 category: case-file
-tags: [confirmation-bias, research, cognitive-bias, media-literacy]
+tags: [confirmation bias, research, cognitive bias, media literacy]
 primaryKeyword: "confirmation bias"
 articleType: core
 faq:
