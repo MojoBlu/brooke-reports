@@ -18,7 +18,8 @@ faq:
     a: "Ask what the message would look like with full disclosure. Imagine the seller explaining the tactic to your face: 'this price was crossed out to anchor you,' 'this timer resets for every visitor.' If the explained version is embarrassing, the unexplained version was manipulation."
 ---
 
-Two messages arrive the same afternoon. Your friend texts: "the standing desk is on sale, I have it, my back stopped hurting, link." A brand emails: "FINAL HOURS ⏰ - 312 people are looking at this desk right now."
+Two messages arrive the same afternoon. Your friend texts: "the standing desk is on sale, I have it, my back stopped hurting, link." 
+A brand emails: "FINAL HOURS ⏰ - 312 people are looking at this desk right now."
 
 Both want the same thing from you. Both are using psychology, your friend knows social proof works; that's why she mentioned her back. But one of these messages would survive you knowing exactly how it was built, and one of them is praying you don't look too closely at where the number 312 came from.
 
