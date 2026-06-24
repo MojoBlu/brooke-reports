@@ -8,6 +8,7 @@ tags: ["testimonials", "fake reviews", "social proof", "FTC", "online courses"]
 primaryKeyword: "spot fake testimonials"
 articleType: "bridge"
 image: /assets/images/posts/fake-testimonials.jpg
+imageAlt: "\"Results Not Typical\" beside a case file folder, with a magnifying glass over a five-star testimonial claiming \"I made $10,000 in 7 days\""
 faq:
   - q: "Are fake testimonials illegal?"
     a: "In the US, yes — as of October 2024, the FTC's rule on consumer reviews and testimonials prohibits fabricated and AI-generated reviews, buying positive reviews, undisclosed insider testimonials, and suppressing negative ones. Enforcement can't catch everything, though, so the rule is a backstop, not a guarantee."

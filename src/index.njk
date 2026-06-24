@@ -86,7 +86,7 @@ schemaType: Organization
 
         <div class="report-card__image">
           {% if post.data.image %}
-          {% image post.data.image, "", {
+          {% image post.data.image, post.data.imageAlt or post.data.title, {
             sizes: "(min-width: 900px) 280px, (min-width: 580px) 50vw, 100vw",
             widths: [280, 560]
           } %}
@@ -261,7 +261,7 @@ schemaType: Organization
       The {% image %} shortcode generates the 400/800 widths in webp + jpeg.
     #}
     <div class="about-teaser__image">
-      {% image "/assets/images/about-image.jpg", "", {
+      {% image "/assets/images/about-image.jpg", "A dimly lit vintage desk with a magnifying glass, spyglass, pocket compass, pipe, and aged handwritten letters — old-school detective ephemera", {
         sizes: "(min-width: 900px) 28vw, 100vw",
         widths: [400, 800]
       } %}
