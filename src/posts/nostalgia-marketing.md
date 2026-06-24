@@ -1,6 +1,6 @@
 ---
 title: "Nostalgia Is a Targeting Parameter"
-seoTitle: "Nostalgia Marketing: Why Everything You Loved at 12 Is For Sale Again"
+seoTitle: "Nostalgia Marketing: Why Your Childhood Is For Sale Again"
 description: "The reboot, the re-release, the butterfly clips — your childhood didn't come back by accident. How nostalgia marketing finds you, and what it costs."
 date: 2026-06-12
 category: "exhibit-a"

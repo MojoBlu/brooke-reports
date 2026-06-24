@@ -1,5 +1,6 @@
 ---
 title: "The Attention Tax: How We Pay Without Realizing"
+seoTitle: "The Attention Tax: How We Pay for Distraction Daily"
 date: 2026-06-02
 category: Attention Economy
 description: Why constant capture is costing you more than time.

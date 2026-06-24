@@ -1,6 +1,6 @@
 ---
 title: "Manufactured Urgency: A Natural History"
-seoTitle: "Fake Scarcity Tactics: How Countdown Timers and \"Only 3 Left\" Work"
+seoTitle: "Fake Scarcity Tactics: How Countdown Timers Trick You"
 description: "Countdown timers, \"only 3 left,\" cart deadlines. Where fake scarcity tactics came from, why they still work, and the one test that exposes them."
 date: 2026-06-11
 category: cold-case
