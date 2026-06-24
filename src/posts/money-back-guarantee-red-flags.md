@@ -1,7 +1,7 @@
 ---
 title: "The Refund Policy Tells You Everything"
 seoTitle: "How to Read a Money-Back Guarantee Before You Buy"
-description: "The refund policy is the most honest paragraph on any sales page — it's the seller predicting whether you'll regret this. Here's how to read it before you buy."
+description: "The refund policy is the most honest paragraph on any sales page — the seller predicting whether you'll regret this. How to read it before you buy."
 date: 2026-06-12
 category: case-file
 tags: [refund policy, money-back guarantee, fine print, auto-renewal, consumer protection]

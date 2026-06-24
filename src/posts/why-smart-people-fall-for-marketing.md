@@ -1,7 +1,7 @@
 ---
 title: "It's Not Stupid to Fall for This"
 seoTitle: "Why Smart People Fall for Marketing Manipulation"
-description: "Falling for marketing tricks doesn't mean you're gullible. The research says intelligence doesn't protect anyone — and the data on who gets scammed proves it."
+description: "Falling for marketing tricks doesn't mean you're gullible. Intelligence doesn't protect anyone — the data on who gets scammed proves it."
 date: 2026-06-12
 category: filed-under-feelings
 tags: [marketing manipulation, cognitive bias, scams, bias blind spot, self-compassion]

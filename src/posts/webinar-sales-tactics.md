@@ -1,7 +1,7 @@
 ---
 title: "How to Read a Webinar Like a Document"
 seoTitle: "Free Webinar Sales Tactics: What Happens in the Last 20 Minutes"
-description: "The free training isn't a class — it's a script with a clock. A minute-by-minute reading of the webinar funnel, including the part where it asks for $997."
+description: "The free training isn't a class — it's a script with a clock. A minute-by-minute reading of the webinar funnel, including the part that asks for $997."
 date: 2026-06-12
 category: "case-file"
 tags: ["webinar sales tactics", "reciprocity", "sunk cost", "online courses", "sales funnels"]

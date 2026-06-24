@@ -1,7 +1,7 @@
 ---
 title: "What Your Group Chat and a Sales Funnel Have in Common"
 seoTitle: "Social Proof in Everyday Life: How Group Pressure Shapes Decisions"
-description: "Your group chat and a sales funnel run on the same engine: social proof. Here's how the 'everyone's doing it' signal works — and how it gets faked."
+description: "Your group chat and a sales funnel run on the same engine: social proof. How the 'everyone's doing it' signal works — and how it gets faked."
 date: 2026-06-11
 category: "exhibit-a"
 tags: ["social proof", "conformity", "sales funnels", "group psychology"]
