@@ -19,15 +19,16 @@ faq:
 ---
 
 Two messages arrive the same afternoon. Your friend texts: "the standing desk is on sale, I have it, my back stopped hurting, link." 
-A brand emails: "FINAL HOURS ⏰ - 312 people are looking at this desk right now."
 
-Both want the same thing from you. Both are using psychology, your friend knows social proof works; that's why she mentioned her back. But one of these messages would survive you knowing exactly how it was built, and one of them is praying you don't look too closely at where the number 312 came from.
+A brand emails: "FINAL HOURS ⏰ 312 people are looking at this desk right now."
+
+Both want the same thing from you. Both are using psychology. Your friend knows social proof works, that's why she mentioned her back. But one of these messages would survive you knowing exactly how it was built, and one of them is praying you don't look too closely at where the number 312 came from.
 
 That difference has a name. Actually, it has two.
 
 ## What's the difference between persuasion and manipulation?
 
-**Persuasion** works by giving you material — reasons, evidence, framing, even feelings — that you can see and weigh. **Manipulation** works by routing around your weighing process entirely: fabricated scarcity, invented anchors, fake consensus, engineered exhaustion. The test isn't whether psychology is involved (it always is) or whether emotion is involved (also always). The test is whether the tactic depends on staying hidden to work.
+**Persuasion** works by giving you material (reasons, evidence, framing, even feelings) that you can see and weigh. **Manipulation** works by routing around your analyzing process entirely: fabricated scarcity, invented anchors, fake consensus, engineered exhaustion. The test isn't whether psychology is involved (it always is) or whether emotion is involved (also always). The test is whether the tactic depends on staying hidden to work.
 
 Hold that last sentence. It's the whole article, and we're going to earn it.
 
@@ -35,7 +36,7 @@ Hold that last sentence. It's the whole article, and we're going to earn it.
 
 The comforting version of this distinction says persuasion is what good people do and manipulation is what bad people do. It doesn't hold up for five minutes. Plenty of sincere people use manipulative tactics they copied from a launch template without ever thinking about it; the fake timer came pre-installed with the funnel software, and the founder genuinely believes her course helps people. Meanwhile a cynic can run a perfectly honest ad.
 
-Intent also has the inconvenient property of being invisible. You can't audit a marketer's heart from a landing page. What you can audit is the method, sitting right there on the page, checkable. So the useful line has to run through the tactic, not the person.
+Intent also has the inconvenience of being invisible. You can't audit a marketer's heart from a landing page. What you can audit is the method, sitting right there on the page, checkable. So the useful line has to run through the tactic, not the person.
 
 And "uses emotion" won't work as the line either, though it's the most popular wrong answer. Your friend's text about her back pain is emotional. A charity photo is emotional. Emotion is information; how something feels is part of what it is. The countdown timer isn't manipulative because it makes you feel urgency. It's manipulative because the urgency is *fictional*. The feeling is real; the fact it points to was manufactured. That's the move, every time: manipulation doesn't inject fake feelings, it attaches real feelings to fake facts.
 
@@ -45,9 +46,9 @@ Here's the working tool, and the term we'll keep using around here: the **Sunlig
 
 Run some examples through it.
 
-"This course includes eight hours of video and a refund window, and here's a graduate you can actually contact" explain that approach to a buyer and nothing changes. It's an argument. Arguments survive sunlight.
+"This course includes eight hours of video and a refund window, and here's a course graduate you can actually contact" explain that approach to a buyer and nothing changes. It's an argument. Arguments survive sunlight.
 
-"The $997 was never the price; we display it crossed out because the first number you see drags your judgment toward it" explained, this collapses into an apology. Anchoring itself is just how brains work; it's one of the most replicated effects in decision research, and an honest seller can't opt out of being *a* first number. But manufacturing the anchor is a choice, and it's a choice that only pays while you don't know about it. (The full autopsy is in [Why $997 Crossed Out Makes $297 Feel Like Rescue](/price-anchoring/).)
+"The $997 was never the price; we display it crossed out because the first number you see anchors the price to something higher." When explained, this collapses into an apology. Anchoring itself is just how brains work; it's one of the most replicated effects in decision research, and an honest seller can't opt out of being *a* first number. But manufacturing the anchor is a choice, and it's a choice that only pays while you don't know about it. (The full autopsy is in [Why $997 Crossed Out Makes $297 Feel Like Rescue](/price-anchoring/).)
 
 "The timer resets for every visitor" fails sunlight so badly that regulators did the explaining themselves; the FTC's dark-patterns report names fake countdown timers and baseless low-stock messages as deceptive design. When the government's description of your tactic reads like an exposé, the tactic was manipulation.
 

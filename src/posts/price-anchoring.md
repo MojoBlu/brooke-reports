@@ -44,7 +44,7 @@ Ask yourself what a typical 6-week marketing course is worth, in dollars. You re
 
 Tversky and Kahneman found that even random numbers could influence people’s estimates. Participants watched a wheel land *on a random number*, then answered an unrelated question. Their guesses still drifted toward the number they had just seen. That was random. A sales page isn't.
 
-So when the slide says $997, the question in your head suddenly changes. It stops being *"is this course worth $297?"* - a valid question that requires actual evaluation - and becomes *"is $297 less than $997?"* That one's easy. That feels like math you can do.
+So when the slide says $997, the question in your head suddenly changes. It stops being *"is this course worth $297?"* (a valid question that requires actual evaluation) and becomes *"is $297 less than $997?"* That one's easy. That feels like math you can do.
 
 You didn't get a discount. You got a different question.
 
@@ -70,7 +70,7 @@ One question cuts through almost all of it: **did anyone, ever, actually pay the
 
 Sometimes the answer is genuinely yes; real markdowns do exist, and a January coat sale is not a psyop. But in the world of courses, coaching, software deals, and all those "limited-time" digital offers, the answer is usually no. The product launched at $297. It will be $297 next month. The $997 exists only on this particular slide, in this particular font, doing this one particular job.
 
-The FTC calls a never-real former price a *fictitious price comparison*, and it's been prohibited in principle for decades. Enforcement, though, is rare and mostly aimed at lreally big retailers. In the creator economy, the fake anchor operates with all the legal risks of jaywalking on an empty street.
+The FTC calls a never-real former price a *fictitious price comparison*, and it's been prohibited in principle for decades. Enforcement, though, is rare and mostly aimed at really big retailers. In the creator economy, the fake anchor operates with all the legal risks of jaywalking on an empty street.
 
 Which means the enforcement is you, my friend.
 
