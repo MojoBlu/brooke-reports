@@ -1,0 +1,406 @@
+---
+layout: layouts/base.njk
+overrideTitle: "Persuasion Literacy & Clear Thinking | Brooke Reports"
+title: Home
+description: "Smart people fall for this. A case archive of the persuasion mechanisms that get past good judgment, taken apart one at a time by someone who fell for them first."
+schemaType: Organization
+---
+
+{# ======================================================== #}
+{# HERO                                                      #}
+{# ======================================================== #}
+<section class="hero">
+  <div class="wrap hero__inner">
+
+    <div class="hero__text">
+      <p class="eyebrow hero__eyebrow">Persuasion Literacy &middot; Marketing Psychology &middot; Clear Thinking</p>
+      <h1 class="hero__headline">
+        <span class="hero__line">You Were Handed</span>
+        <span class="hero__line">a Script. Nobody</span>
+        <span class="hero__line">Mentioned You</span>
+        <span class="hero__line hero__line--italic"><em><span class="hero__drawn">Could Put It Down.</span></em></span>
+      </h1>
+      <p class="hero__lede">You bought the thing. You used your real judgment, and it still worked on you. That isn't a character flaw. It's a design outcome. Brooke Reports takes apart the mechanisms that produce it, so you can see the next one while it's still running.</p>
+      <p class="hero__small-line">Cozy detective agency energy, minus the murders. Investigating confusing sales pages, attention traps, internet hype, and suspiciously shiny promises.</p>
+      <div class="hero__ctas">
+        <a href="/blog/" class="btn btn-primary">Start With the Cases <span aria-hidden="true">&rarr;</span></a>
+        <a href="/second-look/" class="btn btn-ghost">Try Second Look</a>
+      </div>
+    </div>
+
+    {#
+      IMAGE: hero-collage
+      Single source file in src/assets/images/ (export at 1120px wide or larger).
+      The {% image %} shortcode generates the 560/800/1120 widths in webp + jpeg.
+    #}
+    <div class="hero__collage" aria-hidden="true">
+      {% image "/assets/images/hero-collage.png", "", {
+        sizes: "(min-width: 800px) 50vw, 100vw",
+        formats: ["webp", "png"],
+        loading: "eager",
+        fetchpriority: "high"
+      } %}
+    </div>
+
+  </div>
+
+  <img class="hero__tear" src="/assets/images/torn-paper.png" alt="" aria-hidden="true">
+</section>
+
+
+{# ======================================================== #}
+{# FIELD GUIDE INTRO                                         #}
+{# ======================================================== #}
+<section class="field-guide-intro">
+  <div class="wrap field-guide-intro__inner">
+    <div class="field-guide-intro__lead">
+      <p class="eyebrow">Start Here</p>
+      <h2>Intelligence is not a defense.</h2>
+    </div>
+
+    <div class="field-guide-intro__copy">
+      <p>Smart people fall for this. Careful people fall for this. People with twenty years of professional judgment fall for this, in rooms full of other people with twenty years of professional judgment.</p>
+      <p>If you have ever walked out of a purchase, a program, or a room and thought <em>how did that happen to me</em>, you already know the part most people skip. It didn't feel like pressure at the time. It felt like clarity.</p>
+      <p>That's the mechanism working. It's supposed to feel like clarity.</p>
+      <p class="field-guide-intro__punch">Persuasion literacy for people who already paid for one lesson.</p>
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# FEATURED REPORTS                                          #}
+{# ======================================================== #}
+<section class="featured-reports">
+  <div class="wrap">
+    <div class="featured-reports__header">
+      <div>
+        <p class="eyebrow">Latest Field Notes</p>
+        <h2 class="featured-reports__heading">Fresh clues.<br>Clearer choices.</h2>
+      </div>
+      <a href="/blog/" class="featured-reports__all">Read all reports <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="featured-reports__grid">
+      {% for post in collections.posts | limit(4) %}
+      <article class="report-card">
+
+        <div class="report-card__image">
+          {% if post.data.image %}
+          {% image post.data.image, post.data.imageAlt or post.data.title, {
+            sizes: "(min-width: 900px) 280px, (min-width: 580px) 50vw, 100vw",
+            widths: [280, 560]
+          } %}
+          {% else %}
+          <div class="report-card__placeholder" aria-hidden="true"></div>
+          {% endif %}
+        </div>
+
+        <div class="report-card__body">
+          {% if post.data.category %}
+          <p class="eyebrow report-card__eyebrow">{{ post.data.category }}</p>
+          {% endif %}
+          <h3 class="report-card__title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h3>
+          {% if post.data.description %}
+          <p class="report-card__excerpt">{{ post.data.description }}</p>
+          {% endif %}
+          <footer class="report-card__meta">
+            <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            {% if post.data.readTime %}
+            <span aria-hidden="true"> &middot; </span><span>{{ post.data.readTime }} min read</span>
+            {% endif %}
+          </footer>
+        </div>
+
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# CASES WE TAKE                                             #}
+{# ======================================================== #}
+<section class="cases-we-take">
+  <div class="wrap">
+    <div class="cases-we-take__header">
+      <p class="eyebrow">What We Investigate</p>
+      <h2>Cases We Take</h2>
+      <p>Not murders. Not conspiracy boards. Just the everyday confusion that shows up wearing a polished headline and very confident claims.</p>
+    </div>
+
+    <div class="cases-we-take__grid">
+      <article class="case-card">
+        <p class="case-card__label">Case 01</p>
+        <h3>Persuasive Marketing</h3>
+        <p>Sales pages, offers, testimonials, urgency, authority signals, vague promises, and shiny claims that may or may not contain actual evidence.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 02</p>
+        <h3>Attention Traps</h3>
+        <p>The feeds, apps, notifications, trends, and tiny design choices that tax your focus before you've even had coffee.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 03</p>
+        <h3>Social Pressure</h3>
+        <p>The group norms, status signals, identity cues, and invisible &ldquo;everyone's doing this&rdquo; energy that can make a decision feel obvious when it's not.</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 04</p>
+        <h3>Business Advice &amp; Internet Hype</h3>
+        <p>Frameworks, gurus, creator economy promises, productivity claims, and advice that sounds smart until you ask, &ldquo;For whom? Under what conditions?&rdquo;</p>
+      </article>
+
+      <article class="case-card">
+        <p class="case-card__label">Case 05</p>
+        <h3>Human Behavior</h3>
+        <p>Cognitive biases, emotional framing, decision fatigue, incentives, body language, and the ordinary human patterns that make smart people surprisingly persuadable.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# SECOND LOOK PROMO                                         #}
+{# ======================================================== #}
+{#
+  IMAGE: second-look-bg
+  Dark/moody desk + books + ephemera photo, full-width
+  Provide at 1440px wide, JPG
+  Brookie, when ready: uncomment background-image in .second-look-promo in CSS
+#}
+<section class="second-look-promo">
+  <div class="wrap second-look-promo__inner">
+
+    <div class="second-look-promo__lead">
+      <p class="eyebrow">Before You Buy the Thing</p>
+      <h2>Second Look</h2>
+      <p class="second-look-promo__desc">The hardest page to evaluate is the one you already want to say yes to. That's when the mechanisms are working best, and when your own judgment is least available to you.</p>
+      <p class="second-look-promo__desc">Second Look reads a sales page and names what it finds. Not a verdict on whether to buy. A list of what's being done to you while you decide.</p>
+      <a href="/second-look/" class="second-look-promo__link">Try Second Look <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="second-look-promo__features">
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M18 11V6.5a1.5 1.5 0 0 0-3 0v-.5a1.5 1.5 0 0 0-3 0v-.5a1.5 1.5 0 0 0-3 0V11l-1.5-2a1.5 1.5 0 0 0-2.6 1.5L8.5 16A5.5 5.5 0 0 0 14 19h1a5 5 0 0 0 5-5v-3h-2z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Pause the Pitch</p>
+          <p class="second-look-feature__desc">Step out of the emotional momentum long enough to think clearly.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Check the Claims</p>
+          <p class="second-look-feature__desc">Separate what's promised from what's actually supported.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Spot the Pressure</p>
+          <p class="second-look-feature__desc">Notice urgency, authority, social proof, scarcity, and framing before they steer the decision.</p>
+        </div>
+      </div>
+
+      <div class="second-look-feature">
+        <div class="second-look-feature__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <p class="second-look-feature__title">Choose with Clarity</p>
+          <p class="second-look-feature__desc">Make the choice that fits your goals, values, timing, budget, and real life.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# ABOUT TEASER                                              #}
+{# ======================================================== #}
+<section class="about-teaser">
+  <div class="wrap about-teaser__inner">
+
+    {#
+      IMAGE: about-image
+      Atmospheric — books, candlelight, study scene. 3:4 source.
+      The {% image %} shortcode generates the 400/800 widths in webp + jpeg.
+    #}
+    <div class="about-teaser__image">
+      {% image "/assets/images/about-image.jpg", "A dimly lit vintage desk with a magnifying glass, spyglass, pocket compass, pipe, and aged handwritten letters — old-school detective ephemera", {
+        sizes: "(min-width: 900px) 28vw, 100vw",
+        widths: [400, 800]
+      } %}
+    </div>
+
+    <div class="about-teaser__body">
+      <p class="eyebrow">About Brooke Reports</p>
+      <h2>I'm Brookie. I learned this the expensive way.</h2>
+      <p>Twenty years of professional judgment didn't stop me from spending more than ten thousand dollars in rooms designed to make it happen. I'd already studied my way out of one high-demand system. I walked into the next one anyway, because it was wearing a lanyard instead of a robe.</p>
+      <p>Not to make you cynical. Not to prove everything is manipulation. Not to turn every sales page into a crime scene. The goal's simpler than that: to help you see what's happening before you decide what to do. I catch these on myself first. That isn't humility, it's method.</p>
+      <ul class="about-teaser__values" aria-label="Our values">
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Evidence over noise.</strong>
+            <p>We separate claims from support, receipts from feelings, and signal from sparkle.</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Curious, not cynical.</strong>
+            <p>We look for incentives, frames, and missing context without assuming villainy.</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-teaser__value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Nobody's immune.</strong>
+            <p>Not experts, not skeptics, not me. Anyone selling you immunity is running a play.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-teaser__quote-wrap">
+      <blockquote class="about-teaser__quote">
+        <p>Studying the mechanism is not the same as being immune to it. I had done the studying. It caught me anyway.</p>
+        <cite>- Brookie</cite>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+{# ======================================================== #}
+{# HOMEPAGE FAQ                                              #}
+{# ======================================================== #}
+<section class="homepage-faq">
+  <div class="wrap homepage-faq__inner">
+    <div class="homepage-faq__header">
+      <p class="eyebrow">The Case File</p>
+      <h2>What is Brooke Reports?</h2>
+    </div>
+
+    <div class="homepage-faq__list">
+      <article class="homepage-faq__item">
+        <h3>What is Brooke Reports?</h3>
+        <p>Brooke Reports is a case archive of persuasion mechanics. Each report takes one mechanism, shows it operating somewhere in ordinary life, and reconstructs how you would have caught it. It covers marketing psychology, attention, social pressure, and clear thinking.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>Who is Brooke Reports for?</h3>
+        <p>Brooke Reports is for people who have already paid for one lesson. Course buyers, creators, freelancers, small business owners, and anyone who used their real judgment on a purchase and watched it work on them anyway. Not cynics. People who intend to keep saying yes to things, and would like to know what's being done to them while they decide.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>What does Brooke Reports cover?</h3>
+        <p>Brooke Reports covers marketing psychology, sales psychology, media literacy, the attention economy, decision-making, cognitive biases, influence tactics, online offers, vague promises, urgency, social proof, and the hidden pressure inside modern communication.</p>
+      </article>
+
+      <article class="homepage-faq__item">
+        <h3>Is Brooke Reports anti-marketing?</h3>
+        <p>No. Brooke Reports is *not* anti-marketing. It *is* anti-confusion, anti-hype, and anti-pressure. Ethical persuasion helps people make informed choices. Manipulative persuasion tries to bypass judgment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Brooke Reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brooke Reports is a case archive of persuasion mechanics. Each report takes one mechanism, shows it operating somewhere in ordinary life, and reconstructs how you would have caught it. It covers marketing psychology, attention, social pressure, and clear thinking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Brooke Reports for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brooke Reports is for people who have already paid for one lesson. Course buyers, creators, freelancers, small business owners, and anyone who used their real judgment on a purchase and watched it work on them anyway. Not cynics. People who intend to keep saying yes to things, and would like to know what is being done to them while they decide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Brooke Reports cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brooke Reports covers marketing psychology, sales psychology, media literacy, the attention economy, decision-making, cognitive biases, influence tactics, online offers, vague promises, urgency, social proof, and the hidden pressure inside modern communication."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Brooke Reports anti-marketing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Brooke Reports is not anti-marketing. It is anti-confusion, anti-hype, and anti-pressure. Ethical persuasion helps people make informed choices. Manipulative persuasion tries to bypass judgment."
+      }
+    }
+  ]
+}
+</script>
