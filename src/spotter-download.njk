@@ -1,0 +1,178 @@
+---
+permalink: /spotter/download/
+layout: false
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Persuasion Spotter | Brooke Reports</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #F7F1E6;
+      --card: #FFFCF6;
+      --ink: #2A2622;
+      --muted: #5A5249;
+      --green: #2F4A3A;
+      --green-dark: #233829;
+      --orange: #A9501E;
+      --rule: #E6DCCB;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 20px 72px;
+    }
+    .wordmark {
+      text-align: center;
+      font-family: "Fraunces", Georgia, serif;
+      letter-spacing: 0.22em;
+      font-size: 13px;
+      margin: 0 0 48px;
+    }
+    .wordmark a { color: var(--ink); text-decoration: none; }
+    .eyebrow {
+      color: var(--orange);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(36px, 7vw, 52px);
+      line-height: 1.1;
+      margin: 0 0 16px;
+    }
+    h1 em { font-style: italic; }
+    .lede { margin: 0 0 40px; max-width: 34em; }
+    .files {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 640px) {
+      .files { grid-template-columns: 1fr; }
+    }
+    .file {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .file-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .file h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+    .file p { margin: 0 0 20px; font-size: 16px; }
+    .file .note {
+      font-size: 14px;
+      color: var(--orange);
+      font-weight: 500;
+    }
+    .btn {
+      margin-top: auto;
+      display: block;
+      text-align: center;
+      background: var(--green);
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 14px 18px;
+      border-radius: 6px;
+    }
+    .btn:hover, .btn:focus-visible { background: var(--green-dark); }
+    .btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+    .btn.secondary {
+      background: transparent;
+      color: var(--green);
+      border: 2px solid var(--green);
+    }
+    .btn.secondary:hover, .btn.secondary:focus-visible { background: var(--green); color: var(--cream); }
+    .start {
+      margin: 40px 0 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--rule);
+    }
+    .start h3 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+    .start p { margin: 0 0 12px; }
+    .start a { color: var(--green); }
+    footer {
+      text-align: center;
+      margin-top: 56px;
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="wordmark"><a href="/">BROOKE REPORTS</a></p>
+
+    <p class="eyebrow">Persuasion Spotter</p>
+    <h1>Here's your <em>lesson.</em></h1>
+    <p class="lede">Two files, on purpose. One goes to your teen. One stays with you, because it holds an activity that only works if they haven't seen it coming.</p>
+
+    <div class="files">
+      <section class="file">
+        <p class="file-label">For your teen · 8 pages</p>
+        <h2>Student packet</h2>
+        <p>The idea, the six moves, the five pulls, three practice specimens, a week-long hunt, and the Spot the Pull worksheet.</p>
+        <a class="btn" href="/downloads/persuasion-spotter-student.pdf" download>Download student packet</a>
+      </section>
+
+      <section class="file">
+        <p class="file-label">For you · 5 pages</p>
+        <h2>Teacher's pages</h2>
+        <p>Setup notes and The Letter, a live demonstration that lets the room feel it work.</p>
+        <p class="note">Keep this one. Don't send it to students.</p>
+        <a class="btn secondary" href="/downloads/persuasion-spotter-teacher.pdf" download>Download teacher's pages</a>
+      </section>
+    </div>
+
+    <section class="start">
+      <h3>Before you teach it</h3>
+      <p>Read the teacher's pages first, then run one Spot the Pull sheet on your own feed. You'll teach it better, and you won't be teaching it from above it.</p>
+      <p>Caught a good one, or tried The Letter? Tell me how it went: <a href="mailto:hello@brookereports.com">hello@brookereports.com</a></p>
+    </section>
+
+    <footer>Made by Brookie at Brooke Reports</footer>
+  </main>
+</body>
+</html>
